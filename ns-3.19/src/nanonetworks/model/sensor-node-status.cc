@@ -1,0 +1,629 @@
+/*Author: Tanzila Choudhury
+ Added for sensor node activities - sensing, harvesting, reading, making packet to transmit */
+
+
+#include "sensor-node-status.h"
+#include <fstream>
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <ns3/log.h>
+#include "ns3/random-variable-stream.h"
+#include "ns3/core-module.h"
+#include "ns3/object.h"
+#include "ns3/uinteger.h"
+#include <ns3/traced-callback.h>
+#include <ns3/traced-value.h>
+#include <ns3/trace-source-accessor.h>
+#include <ns3/trace-helper.h>
+#include "ns3/nstime.h"
+#include "ns3/simulator.h"
+#include "ns3/packet.h"
+#include <ns3/ptr.h>
+
+NS_LOG_COMPONENT_DEFINE("SensorNodeStatus");
+
+namespace ns3{
+
+SensorNodeStatus::SensorNodeStatus(void)
+{
+	//std::cout<<"constructor\n";
+	id=0;
+	max_energy_unit=6;
+	tx_energy=2;
+	rx_energy=2;
+	sense_energy=1;
+	current_energy_unit=0;
+	is_Dynamic=false;
+	slot_num=0;
+	emergency_slot=-1;
+	data_memsize=0;
+	data_memory=NULL;
+	sensing_index=0;
+	harvest_time=Time(0);
+	dataread_time=Time(0);
+	tx_time=Time(0);
+	rx_time=Time(0);
+	lastDataSent=false;
+	dataReady=false;
+	data_interval=30;
+	last_read_time=Time(0);
+	last_sleep_time=Time(0);
+	last_heard_time = 0;
+	num_em_slots=0;
+	myslotmissed=0;	
+	emslotmissedflag=false;
+	mytotalslots=0;
+	slotsmissedforharvesting=0;
+	max_em_nodes = 0;
+	
+	gamma=0;
+	gamma_max=0;
+	cur_gamma=0;
+	em_bit =0;
+	next_tx_time=0;
+	recharged_times = 0;
+
+}
+
+SensorNodeStatus::SensorNodeStatus(int slotno, int maxEnergy, bool isDynamic, int memsize, int htime, int datainterval, int txtime)
+{		
+	//std::cout<<"constructor 9\n";
+	max_energy_unit=maxEnergy;
+	tx_energy=1140;
+	rx_energy=1140;
+	sense_energy=190;
+	current_energy_unit=maxEnergy;
+	is_Dynamic=isDynamic;
+	slot_num=slotno;
+	id = slotno;
+	emergency_slot=-1; // indicates which emergency slot position it is assigned 
+	data_memsize=memsize;
+	sensing_index = 0;
+	data_memory= new int[memsize];
+	harvest_time=Time(htime);
+	dataread_time=Time(datainterval);
+	tx_time=Time(txtime);
+	rx_time=Time(txtime);
+	lastDataSent=false;
+	dataReady=false;
+	data_interval=datainterval;
+	last_read_time=Time(0);
+	last_sleep_time=Time(0);
+	last_heard_time = 0;
+	num_em_slots=0;
+	myslotmissed=0;
+	emslotmissedflag=false;
+	mytotalslots=0;	
+	slotsmissedforharvesting=0;
+	max_em_nodes = 0;
+
+	gamma=0;
+	gamma_max=0;
+	cur_gamma=0;
+	em_bit =0;
+	next_tx_time=0;
+	recharged_times = 0;
+}
+
+SensorNodeStatus::~SensorNodeStatus(void)
+{
+	//std::cout<<"destructor\n";
+}
+
+void SensorNodeStatus::ResetSensor(void)
+{	
+	//std::cout<<"Reset calling\n";
+	current_energy_unit=max_energy_unit;
+	emergency_slot=-1;
+	for(int i=0; i<data_memsize; i++)
+	{
+		data_memory[i]=-1;
+	}
+	lastDataSent=false;
+	dataReady=false;	
+} 
+
+
+void SensorNodeStatus::SetGammaValues(int g, int gmax)
+{
+	gamma = g;
+	gamma_max = gmax;	
+}
+
+int SensorNodeStatus::GetGammaVal(void)
+{
+	return gamma;
+}
+
+int SensorNodeStatus::GetGammaMax(void)
+{
+	return gamma_max;
+}
+
+int SensorNodeStatus::GetCurGammaVal(void)
+{
+	return cur_gamma;
+}
+
+int SensorNodeStatus::GetEmBitVal(void)
+{
+	return em_bit;
+}
+
+void SensorNodeStatus::UpdateCurGamma(bool emval)
+{
+	if(emval==true)
+		cur_gamma = 0; 
+	else
+	{
+		if(cur_gamma<gamma_max)
+			cur_gamma = cur_gamma+gamma;
+	}
+}
+
+int SensorNodeStatus::GetNextTxTime(void)
+{
+	return next_tx_time;
+}
+
+int SensorNodeStatus::GetRechargedTimes(void)
+{
+	return recharged_times;
+}
+
+void SensorNodeStatus::UpdateNextTxTime(int curtime, int slotlen, int NUM_NODE)
+{
+	next_tx_time = curtime + (cur_gamma+1)*(slotlen*NUM_NODE);
+}
+
+int SensorNodeStatus::GetCurrentEnergy(void)
+{
+	return 	current_energy_unit;
+} 
+
+int SensorNodeStatus::GetId(void)
+{
+	return 	id;
+}
+
+void SensorNodeStatus::SetDataInterval(int interval)
+{
+	data_interval = interval;
+}
+
+int SensorNodeStatus::GetDataInterval(void)
+{
+	return data_interval;
+}
+
+void SensorNodeStatus::SetSensingStartTime(int sstime)
+{
+	sensing_start_time=Time(sstime);
+}
+
+int SensorNodeStatus::GetSensingIndex(int currenttime) //returns the index of the currently holding data in memory  
+{
+	//sensing_index=(currenttime-sensing_start_time.GetMicroSeconds())/ data_interval	;
+	return sensing_index;
+}
+
+void SensorNodeStatus::SetConsumeEnergy(int tx, int rx, int sense)
+{
+	tx_energy=tx;
+	rx_energy=rx;
+	sense_energy=sense;
+}
+
+void SensorNodeStatus::SetMaxEmNodes(int num)
+{
+	max_em_nodes = num;
+}
+
+
+void SensorNodeStatus::ReadData(int data, int currenttime)
+{
+	std::cout<<"at time "<<currenttime<<": sensor "<<id<<" is sensing/reading data " << data << "\n";	
+	if(lastDataSent==false && dataReady==true)
+	{
+		std::cout<<"dropping previous unsent data becoz of memory shortage\n";
+	}
+	data_memory[0]=data;
+	lastDataSent=false;
+	dataReady=true;
+	sensing_index++;
+	current_energy_unit= current_energy_unit - sense_energy;
+	last_read_time= Time(currenttime);
+	std::cout<<"will finish reading at : "<<last_read_time+dataread_time<<std::endl;
+}
+
+
+Ptr<Packet> SensorNodeStatus::TxData(void)
+{
+	//std::cout<<"sensor "<<id<<" is packing data\n";	
+	uint8_t  buffer[10];  
+        int tempvalue = data_memory[0];
+	memcpy(buffer, &tempvalue, sizeof(int));
+              
+	Ptr<Packet> p = Create<Packet> (buffer,sizeof(int));
+	current_energy_unit= current_energy_unit - tx_energy;
+	lastDataSent=true;
+	dataReady=false;
+	return p;	
+}
+
+Ptr<Packet> SensorNodeStatus::TxDynamicData(bool risky) //used for Dynamic TDMA with risky bit indicator in packet data
+{
+	
+	//std::cout<<"sensor "<<id<<" is packing data\n";	
+	uint8_t  buffer[11];  
+        uint16_t tempvalue = data_memory[0];
+	uint8_t emergency_bit = 0; 
+
+	if(risky==true)
+		emergency_bit=1;
+
+	uint32_t packetval = emergency_bit;
+	packetval = (((uint32_t)(tempvalue<<4)) | packetval);
+	memcpy(buffer, &packetval, sizeof(int));
+	
+	Ptr<Packet> p = Create<Packet> (buffer,sizeof(uint32_t));
+
+	current_energy_unit= current_energy_unit - tx_energy;
+	lastDataSent=true;
+	dataReady=false;
+	return p;	
+}
+
+Ptr<Packet> SensorNodeStatus::TxAdaptiveData(bool risky)
+{
+	//std::cout<<"sensor "<<id<<" is packing data\n";
+	
+	this->UpdateCurGamma(risky);
+	if(risky == true)
+		em_bit=1;
+	else 
+		em_bit=0;
+
+	uint8_t  buffer[10];  
+        int tempvalue = data_memory[0];
+	memcpy(buffer, &tempvalue, sizeof(int));
+              
+	Ptr<Packet> p = Create<Packet> (buffer,sizeof(int));
+	current_energy_unit= current_energy_unit - tx_energy;
+	lastDataSent=true;
+	dataReady=false;
+	return p;
+}
+
+void SensorNodeStatus::HarvestEnergy(int currenttime)
+{
+	if(current_energy_unit==max_energy_unit)
+	{
+		std::cout<<"\n No need to harvest/sleep more dear! GO back! :P \n";
+		return;
+	}		
+	current_energy_unit= max_energy_unit;
+	last_sleep_time = Time(currenttime);
+	recharged_times++;
+	std::cout<<"sensor "<<id<<" is harvesting/sleeping\n";
+}
+
+bool SensorNodeStatus::ReadyToTxSimpleTDMA(int starttime, int currenttime, int slotlen, int NUM_NODE)
+{
+	int tdmatime = currenttime-starttime;
+	int onecycle = slotlen*NUM_NODE;
+	int myslottime = slotlen*slot_num;
+	bool ready = false;
+	
+
+	if(currenttime < last_sleep_time.GetMicroSeconds()+harvest_time.GetMicroSeconds())
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still sleeping\n";
+		ready = false;
+	}
+	else if(currenttime<last_read_time.GetMicroSeconds()+dataread_time.GetMicroSeconds())
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still reading\n";
+		ready = false;
+	}
+	else if(tdmatime%onecycle==myslottime && current_energy_unit>=tx_energy && dataReady==true)
+	{	
+		ready = true;
+	}
+	else if(current_energy_unit<tx_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is going to harvest for having less energy\n";
+		HarvestEnergy(currenttime);
+		ready = false;	
+	}
+	else 
+		ready = false;
+
+	if((tdmatime%onecycle)==myslottime)
+	{	
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< "'s slot time to tx\n";
+		mytotalslots++;
+		
+		if(ready==false)
+		{
+			myslotmissed++;
+				
+		}			
+	}
+
+
+	return ready;
+}
+
+
+bool SensorNodeStatus::ReadyToTxAdaptiveTDMA(int starttime, int currenttime, int slotlen, int NUM_NODE)
+{
+	int tdmatime = currenttime-starttime;
+	int onecycle = slotlen*NUM_NODE;
+	int myslottime = slotlen*slot_num;
+	bool ready = false;
+	
+
+	if(currenttime < last_sleep_time.GetMicroSeconds()+harvest_time.GetMicroSeconds())
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still sleeping\n";
+		ready = false;
+	}
+	else if(currenttime<last_read_time.GetMicroSeconds()+dataread_time.GetMicroSeconds())
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still reading\n";
+		ready = false;
+	}
+	else if(current_energy_unit<tx_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is going to harvest for having less energy\n";
+		HarvestEnergy(currenttime);
+		ready = false;	
+	}
+	else if(tdmatime%onecycle==myslottime && current_energy_unit>=tx_energy && dataReady==true)
+	{	
+		if(next_tx_time==0) //first cycle
+			ready=true;
+		else if(next_tx_time==currenttime)
+			ready=true;
+		else
+			ready=false;
+	}
+	else 
+		ready = false;
+
+
+	if((tdmatime%onecycle)==myslottime)
+	{	
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< "'s slot time to tx\n";
+		mytotalslots++;
+		
+		if(ready==false)
+		{
+			myslotmissed++;
+				
+		}			
+	}
+
+
+	return ready;
+}
+
+
+bool SensorNodeStatus::ReadyToTxDynamicTDMA(int bstarttime, int currenttime, int slotlen, int NUM_NODE)
+{
+	int tdmatime = currenttime-bstarttime;
+	int onecycle = slotlen*(NUM_NODE+num_em_slots+1); //broadcastslot+emergencyslot+sensorslot
+	int myslottime;
+	bool ready=false;
+	int time_gap = currenttime - last_heard_time;
+
+	if(time_gap>(slotlen*(slot_num+1+max_em_nodes)))
+	{
+		std::cout<<"return false due to time gap check\n";
+		return false;
+	}	
+
+	if(emergency_slot==-1) //normal push slots 
+	{	
+			myslottime = slotlen*(num_em_slots + slot_num+1);
+	}	
+	else //emergency slots
+	{
+		if(emslotmissedflag==false)
+		{	
+			myslottime = slotlen*(emergency_slot+1);
+		}
+		else
+		{
+			myslottime = slotlen*(num_em_slots + slot_num+1);
+			emslotmissedflag=false; //reset flag
+			//emergency_slot=-1;			
+		}	
+ 
+	}	
+
+
+	if(tdmatime%onecycle==myslottime && current_energy_unit>=tx_energy && dataReady==true)
+	{	
+		ready= true;
+	}
+	else if( Time(currenttime) < (last_sleep_time +harvest_time))
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still sleeping\n";
+		//slotmissedforharvesting++;
+		ready= false;
+	}
+	else if(Time(currenttime) < (last_read_time +dataread_time))
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still reading\n";
+		ready= false;
+	}
+
+	else if(current_energy_unit<tx_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is going to harvest for having less energy\n";
+		HarvestEnergy(currenttime);
+		ready= false;	
+	}
+	else 
+		ready= false;
+
+
+	if((tdmatime%onecycle)==myslottime)
+	{	
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< "'s slot time to tx\n";
+		mytotalslots++;
+		
+		if(ready==false)
+		{
+			myslotmissed++;
+			
+			if(emergency_slot!=-1) // a slot missed in pull slots flag
+			{
+				emslotmissedflag=true;
+				
+			}	
+		}
+		emergency_slot=-1; //whether it is a pull slot or push slot, if it's slot time is passed, then for next cycle it should be reset again to -1			
+	}
+
+	return ready;	
+}
+
+bool SensorNodeStatus::ReadyToReadSimpleTDMA(int currenttime)
+{
+	
+	Time sensetime = Time(currenttime) - last_read_time;
+	if(Time(currenttime) < (last_sleep_time + harvest_time))
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still sleeping\n";
+		return false;
+	}
+	if(current_energy_unit>sense_energy && sensetime>= Time(data_interval))
+	{	
+		return true;
+	}
+	else if(current_energy_unit<sense_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is going to harvest for having less energy\n";
+		HarvestEnergy(currenttime);
+		return false;	
+	}
+	else 
+		return false;	
+}
+
+bool SensorNodeStatus::ReadyToReadDynamicTDMA(int currenttime)
+{
+	
+	Time sensetime = Time(currenttime) - last_read_time;
+	std::cout<<"inside ReadytoRead for node: "<<id<<" , sensetime is : "<<sensetime<<std::endl;
+
+
+	if(Time(currenttime) < (last_sleep_time + harvest_time))
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still sleeping\n";
+		return false;
+	}
+	if(current_energy_unit>sense_energy && sensetime>= Time(data_interval))
+	{	
+		return true;
+	}
+	else if(current_energy_unit<sense_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is going to harvest for having less energy\n";
+		HarvestEnergy(currenttime);
+		return false;	
+	}
+	else 
+		return false;	
+}
+
+
+bool SensorNodeStatus::NewSensorDataReady(int currenttime)
+{
+	
+	return false;
+}
+
+
+void SensorNodeStatus::ConsumeEnergy(int eunits)
+{
+	current_energy_unit=current_energy_unit-eunits;
+}
+
+int SensorNodeStatus::GetEmergencyNodeNum(void)
+{
+	return num_em_slots;
+}
+
+int  SensorNodeStatus::GetEmergencySlotInfo(void)
+{
+	return emergency_slot;
+}
+
+
+int SensorNodeStatus::GetDataToBeSent(void)
+{
+	return data_memory[0];
+}
+
+int SensorNodeStatus::GetSlotMissCountForSleeping(void)
+{
+	return slotsmissedforharvesting;
+}
+
+int SensorNodeStatus::GetSlotMissedCount(void)
+{
+	return myslotmissed;
+}
+
+int SensorNodeStatus::GetTotalSlotCount(void)
+{
+	return mytotalslots;
+}
+
+int SensorNodeStatus::GetLastHeardTime(void)
+{
+	return last_heard_time;
+}
+
+
+void SensorNodeStatus::ExtractPullData(Ptr<Packet> p, int currenttime) //extracts the packet info sent by interface during broadcase from the packet (after removing mac header)
+{
+	current_energy_unit = current_energy_unit-rx_energy;
+
+	last_heard_time = currenttime;
+
+	uint8_t buffer[11];
+	p->CopyData(buffer, sizeof(buffer));
+	uint32_t packetdata;
+	memcpy(&packetdata, buffer, sizeof(uint32_t));	
+
+	int emergency = packetdata & 0x0000000F;
+	std::cout << "Emergency bit value " << emergency <<std::endl;
+	num_em_slots = (packetdata>>4) & 0x0000000F;
+	std::cout << "Number of emergency slots: " << num_em_slots <<std::endl;
+	if(num_em_slots>0)
+	{	
+		int value ;
+		for(int i=0; i<num_em_slots; i++)
+		{
+			value = (packetdata>>4*(i+2)) & 0x0000000F;
+			if(value==id)
+			{
+				emergency_slot=i;
+				std::cout << "emergency slots matched for: " << value<< ", given emergency slot:  "<< i<<std::endl;
+				return;
+			}
+		}
+	}
+	else
+	{
+		emergency_slot=-1;
+	}
+}
+
+} //namespace ns3

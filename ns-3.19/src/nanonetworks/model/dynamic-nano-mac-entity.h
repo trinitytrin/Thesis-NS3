@@ -1,0 +1,66 @@
+/* 
+ * Added by: Tanzila Choudhury
+  
+ */
+
+#ifndef DYNAMIC_NANO_MAC_ENTITY_H
+#define DYNAMIC_NANO_MAC_ENTITY_H
+
+#include "ns3/object.h"
+#include <list>
+#include "nano-mac-entity.h"
+#include <deque>
+
+#include "ns3/object.h"
+#include "ns3/uinteger.h"
+#include "ns3/traced-value.h"
+#include "ns3/trace-source-accessor.h"
+ #include "ns3/packet.h"
+#include "ns3/config.h"
+#include <fstream>
+#include <iostream>
+#include <stdio.h>
+#include <list>
+#include <string.h>
+
+
+
+namespace ns3 {
+
+
+/**
+
+* Author: Tanzila Choudhury 
+* This class implements the Dynamic Mac strategy of the prposed system.
+* December, 2017 - Texas, USA
+
+**/
+class DynamicNanoMacEntity : public NanoMacEntity
+{
+public:
+  static TypeId GetTypeId (void);
+
+  DynamicNanoMacEntity (void);
+  virtual ~DynamicNanoMacEntity (void);
+
+  virtual void DoDispose (void);
+
+  virtual void Send (Ptr<Packet> p);
+  virtual void BroadcastPacket (Ptr<Packet> p);
+  virtual void Send (Ptr<Packet> p, uint32_t dst);
+  virtual void Receive (Ptr<Packet> p);
+  void DoSendPacket ();
+  
+
+private:
+
+  std::deque<Ptr<Packet> > m_queue;
+  TracedCallback<Ptr<const Packet> > m_phyRxInfoTrace;
+  TracedCallback<Ptr<const Packet> > m_phyTxInfoTrace;
+
+};
+
+
+} // namespace ns3
+
+#endif /* DYNAMIC_NANO_MAC_ENTITY_H */

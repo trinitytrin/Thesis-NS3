@@ -1,0 +1,1200 @@
+
+
+~~~~~~~~~ Results for Simulation No: 1 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 10
+
+Risky Data Miss Rate = 86.0465%
+
+Successful TX Simulation ran for: 710 time units 
+
+Slot Miss Rate = 52.1127%
+
+
+~~~~~~~~~ Results for Simulation No: 2 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 20
+
+Risky Data Miss Rate = 68.75%
+
+Successful TX Simulation ran for: 1010 time units 
+
+Slot Miss Rate = 58.3333%
+
+
+~~~~~~~~~ Results for Simulation No: 3 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 30
+
+Risky Data Miss Rate = 49.0196%
+
+Successful TX Simulation ran for: 1710 time units 
+
+Slot Miss Rate = 56.4516%
+
+
+~~~~~~~~~ Results for Simulation No: 4 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 40
+
+Risky Data Miss Rate = 40.9091%
+
+Successful TX Simulation ran for: 2060 time units 
+
+Slot Miss Rate = 60.274%
+
+
+~~~~~~~~~ Results for Simulation No: 5 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 50
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2060 time units 
+
+Slot Miss Rate = 94.7368%
+
+
+~~~~~~~~~ Results for Simulation No: 6 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 60
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2410 time units 
+
+Slot Miss Rate = 95.0216%
+
+
+~~~~~~~~~ Results for Simulation No: 7 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 70
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2410 time units 
+
+Slot Miss Rate = 95.7249%
+
+
+~~~~~~~~~ Results for Simulation No: 8 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2760 time units 
+
+Slot Miss Rate = 95.7983%
+
+
+~~~~~~~~~ Results for Simulation No: 9 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2760 time units 
+
+Slot Miss Rate = 96.2631%
+
+
+~~~~~~~~~ Results for Simulation No: 10 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 40 time units 
+
+Slot Miss Rate = 99.4924%
+
+
+~~~~~~~~~ Results for Simulation No: 11 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 10
+
+Risky Data Miss Rate = 83.6956%
+
+Successful TX Simulation ran for: 760 time units 
+
+Slot Miss Rate = 60%
+
+
+~~~~~~~~~ Results for Simulation No: 12 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 20
+
+Risky Data Miss Rate = 81.8182%
+
+Successful TX Simulation ran for: 1220 time units 
+
+Slot Miss Rate = 72.3077%
+
+
+~~~~~~~~~ Results for Simulation No: 13 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 30
+
+Risky Data Miss Rate = 68.1818%
+
+Successful TX Simulation ran for: 1810 time units 
+
+Slot Miss Rate = 68.6667%
+
+
+~~~~~~~~~ Results for Simulation No: 14 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 40
+
+Risky Data Miss Rate = 41.6667%
+
+Successful TX Simulation ran for: 2160 time units 
+
+Slot Miss Rate = 65.625%
+
+
+~~~~~~~~~ Results for Simulation No: 15 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 50
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2510 time units 
+
+Slot Miss Rate = 94.7368%
+
+
+~~~~~~~~~ Results for Simulation No: 16 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 60
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2510 time units 
+
+Slot Miss Rate = 95.5882%
+
+
+~~~~~~~~~ Results for Simulation No: 17 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 70
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2860 time units 
+
+Slot Miss Rate = 95.7249%
+
+
+~~~~~~~~~ Results for Simulation No: 18 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2860 time units 
+
+Slot Miss Rate = 96.2602%
+
+
+~~~~~~~~~ Results for Simulation No: 19 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 3210 time units 
+
+Slot Miss Rate = 96.2631%
+
+
+~~~~~~~~~ Results for Simulation No: 20 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 3210 time units 
+
+Slot Miss Rate = 96.6443%
+
+
+~~~~~~~~~ Results for Simulation No: 21 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 10
+
+Risky Data Miss Rate = 88.1188%
+
+Successful TX Simulation ran for: 740 time units 
+
+Slot Miss Rate = 68.75%
+
+
+~~~~~~~~~ Results for Simulation No: 22 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 20
+
+Risky Data Miss Rate = 82.716%
+
+Successful TX Simulation ran for: 1260 time units 
+
+Slot Miss Rate = 73.2824%
+
+
+~~~~~~~~~ Results for Simulation No: 23 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 30
+
+Risky Data Miss Rate = 76.4706%
+
+Successful TX Simulation ran for: 1720 time units 
+
+Slot Miss Rate = 75%
+
+
+~~~~~~~~~ Results for Simulation No: 24 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 40
+
+Risky Data Miss Rate = 57.1429%
+
+Successful TX Simulation ran for: 2310 time units 
+
+Slot Miss Rate = 71.6667%
+
+
+~~~~~~~~~ Results for Simulation No: 25 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 50
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2310 time units 
+
+Slot Miss Rate = 95.3771%
+
+
+~~~~~~~~~ Results for Simulation No: 26 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 60
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 2660 time units 
+
+Slot Miss Rate = 95.5882%
+
+
+~~~~~~~~~ Results for Simulation No: 27 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 70
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 3010 time units 
+
+Slot Miss Rate = 95.7249%
+
+
+~~~~~~~~~ Results for Simulation No: 28 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 3010 time units 
+
+Slot Miss Rate = 96.248%
+
+
+~~~~~~~~~ Results for Simulation No: 29 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 3360 time units 
+
+Slot Miss Rate = 96.2631%
+
+
+~~~~~~~~~ Results for Simulation No: 30 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 3360 time units 
+
+Slot Miss Rate = 96.6443%
+
+
+~~~~~~~~~ Results for Simulation No: 31 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 10
+
+Risky Data Miss Rate = 92.0354%
+
+Successful TX Simulation ran for: 690 time units 
+
+Slot Miss Rate = 47.619%
+
+
+~~~~~~~~~ Results for Simulation No: 32 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 20
+
+Risky Data Miss Rate = 89.5833%
+
+Successful TX Simulation ran for: 1460 time units 
+
+Slot Miss Rate = 57.1429%
+
+
+~~~~~~~~~ Results for Simulation No: 33 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 30
+
+Risky Data Miss Rate = 75.3247%
+
+Successful TX Simulation ran for: 2060 time units 
+
+Slot Miss Rate = 52.3256%
+
+
+~~~~~~~~~ Results for Simulation No: 34 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 40
+
+Risky Data Miss Rate = 85.8974%
+
+Successful TX Simulation ran for: 2190 time units 
+
+Slot Miss Rate = 66.9492%
+
+
+~~~~~~~~~ Results for Simulation No: 35 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 50
+
+Risky Data Miss Rate = 73.5294%
+
+Successful TX Simulation ran for: 2760 time units 
+
+Slot Miss Rate = 65.3846%
+
+
+~~~~~~~~~ Results for Simulation No: 36 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 60
+
+Risky Data Miss Rate = 54.5455%
+
+Successful TX Simulation ran for: 3460 time units 
+
+Slot Miss Rate = 57.9365%
+
+
+~~~~~~~~~ Results for Simulation No: 37 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 70
+
+Risky Data Miss Rate = 54.717%
+
+Successful TX Simulation ran for: 3460 time units 
+
+Slot Miss Rate = 61.7021%
+
+
+~~~~~~~~~ Results for Simulation No: 38 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 80
+
+Risky Data Miss Rate = 43.4783%
+
+Successful TX Simulation ran for: 3460 time units 
+
+Slot Miss Rate = 64.2857%
+
+
+~~~~~~~~~ Results for Simulation No: 39 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 90
+
+Risky Data Miss Rate = 43.1818%
+
+Successful TX Simulation ran for: 4160 time units 
+
+Slot Miss Rate = 63.522%
+
+
+~~~~~~~~~ Results for Simulation No: 40 ~~~~~~~~~~~~~
+
+
+For Gamma: 1
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 4160 time units 
+
+Slot Miss Rate = 94.7368%
+
+
+~~~~~~~~~ Results for Simulation No: 41 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 10
+
+Risky Data Miss Rate = 91.3793%
+
+Successful TX Simulation ran for: 860 time units 
+
+Slot Miss Rate = 51.1628%
+
+
+~~~~~~~~~ Results for Simulation No: 42 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 20
+
+Risky Data Miss Rate = 87.5%
+
+Successful TX Simulation ran for: 1560 time units 
+
+Slot Miss Rate = 60.274%
+
+
+~~~~~~~~~ Results for Simulation No: 43 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 30
+
+Risky Data Miss Rate = 79.7619%
+
+Successful TX Simulation ran for: 2260 time units 
+
+Slot Miss Rate = 63.9175%
+
+
+~~~~~~~~~ Results for Simulation No: 44 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 40
+
+Risky Data Miss Rate = 85.8824%
+
+Successful TX Simulation ran for: 2260 time units 
+
+Slot Miss Rate = 71.2%
+
+
+~~~~~~~~~ Results for Simulation No: 45 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 50
+
+Risky Data Miss Rate = 76.3889%
+
+Successful TX Simulation ran for: 2960 time units 
+
+Slot Miss Rate = 69.7842%
+
+
+~~~~~~~~~ Results for Simulation No: 46 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 60
+
+Risky Data Miss Rate = 65.1515%
+
+Successful TX Simulation ran for: 3660 time units 
+
+Slot Miss Rate = 67.8082%
+
+
+~~~~~~~~~ Results for Simulation No: 47 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 70
+
+Risky Data Miss Rate = 65.625%
+
+Successful TX Simulation ran for: 3660 time units 
+
+Slot Miss Rate = 70.9091%
+
+
+~~~~~~~~~ Results for Simulation No: 48 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 80
+
+Risky Data Miss Rate = 56.3636%
+
+Successful TX Simulation ran for: 4360 time units 
+
+Slot Miss Rate = 67.4847%
+
+
+~~~~~~~~~ Results for Simulation No: 49 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 90
+
+Risky Data Miss Rate = 50.9804%
+
+Successful TX Simulation ran for: 4360 time units 
+
+Slot Miss Rate = 69.8324%
+
+
+~~~~~~~~~ Results for Simulation No: 50 ~~~~~~~~~~~~~
+
+
+For Gamma: 2
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 5060 time units 
+
+Slot Miss Rate = 94.7368%
+
+
+~~~~~~~~~ Results for Simulation No: 51 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 10
+
+Risky Data Miss Rate = 95.3125%
+
+Successful TX Simulation ran for: 780 time units 
+
+Slot Miss Rate = 67.3913%
+
+
+~~~~~~~~~ Results for Simulation No: 52 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 20
+
+Risky Data Miss Rate = 90.3846%
+
+Successful TX Simulation ran for: 1290 time units 
+
+Slot Miss Rate = 71.25%
+
+
+~~~~~~~~~ Results for Simulation No: 53 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 30
+
+Risky Data Miss Rate = 82.7586%
+
+Successful TX Simulation ran for: 1890 time units 
+
+Slot Miss Rate = 67.6471%
+
+
+~~~~~~~~~ Results for Simulation No: 54 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 40
+
+Risky Data Miss Rate = 92%
+
+Successful TX Simulation ran for: 2560 time units 
+
+Slot Miss Rate = 77.2059%
+
+
+~~~~~~~~~ Results for Simulation No: 55 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 50
+
+Risky Data Miss Rate = 80.2632%
+
+Successful TX Simulation ran for: 3260 time units 
+
+Slot Miss Rate = 73.6487%
+
+
+~~~~~~~~~ Results for Simulation No: 56 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 60
+
+Risky Data Miss Rate = 77.7778%
+
+Successful TX Simulation ran for: 3490 time units 
+
+Slot Miss Rate = 75.5952%
+
+
+~~~~~~~~~ Results for Simulation No: 57 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 70
+
+Risky Data Miss Rate = 71.4286%
+
+Successful TX Simulation ran for: 3960 time units 
+
+Slot Miss Rate = 74.8603%
+
+
+~~~~~~~~~ Results for Simulation No: 58 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 80
+
+Risky Data Miss Rate = 62.2951%
+
+Successful TX Simulation ran for: 3960 time units 
+
+Slot Miss Rate = 74.4681%
+
+
+~~~~~~~~~ Results for Simulation No: 59 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 90
+
+Risky Data Miss Rate = 31.8182%
+
+Successful TX Simulation ran for: 4660 time units 
+
+Slot Miss Rate = 67.2515%
+
+
+~~~~~~~~~ Results for Simulation No: 60 ~~~~~~~~~~~~~
+
+
+For Gamma: 3
+And Gamma_Max: 6
+Size of Data = 10000
+Channel Error Rate = 0%
+Maximum Energy of Each Battery = 20000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+
+Risky Data Miss Rate = 98.1481%
+
+Successful TX Simulation ran for: 4660 time units 
+
+Slot Miss Rate = 95.3771%

@@ -1,0 +1,1932 @@
+
+
+~~~~~~~~~ Results for Simulation No: 1 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 10
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 81.1668%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 27761
+Avg Recharged Times for each node : 5552
+
+Slot Miss Rate = 24.5016%
+
+
+~~~~~~~~~ Results for Simulation No: 2 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 20
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 67.3739%
+
+Successful TX Simulation ran for: 199970 time units 
+
+Total number of Recharge Times : 25770
+Avg Recharged Times for each node : 5154
+
+Slot Miss Rate = 20.2932%
+
+
+~~~~~~~~~ Results for Simulation No: 3 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 30
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 57.5113%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 25710
+Avg Recharged Times for each node : 5142
+
+Slot Miss Rate = 20.5606%
+
+
+~~~~~~~~~ Results for Simulation No: 4 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 40
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 47.7587%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 25529
+Avg Recharged Times for each node : 5105
+
+Slot Miss Rate = 21.2818%
+
+
+~~~~~~~~~ Results for Simulation No: 5 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 50
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 36.5134%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 25506
+Avg Recharged Times for each node : 5101
+
+Slot Miss Rate = 21.4982%
+
+
+~~~~~~~~~ Results for Simulation No: 6 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 60
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 29.6641%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 25244
+Avg Recharged Times for each node : 5048
+
+Slot Miss Rate = 23.4003%
+
+
+~~~~~~~~~ Results for Simulation No: 7 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 70
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 25.9916%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 25068
+Avg Recharged Times for each node : 5013
+
+Slot Miss Rate = 24.1143%
+
+
+~~~~~~~~~ Results for Simulation No: 8 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 19.4623%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 24273
+Avg Recharged Times for each node : 4854
+
+Slot Miss Rate = 30.5138%
+
+
+~~~~~~~~~ Results for Simulation No: 9 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 13.7015%
+
+Successful TX Simulation ran for: 199970 time units 
+
+Total number of Recharge Times : 23678
+Avg Recharged Times for each node : 4735
+
+Slot Miss Rate = 35.1887%
+
+
+~~~~~~~~~ Results for Simulation No: 10 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 8.52373%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 23210
+Avg Recharged Times for each node : 4642
+
+Slot Miss Rate = 38.799%
+
+
+~~~~~~~~~ Results for Simulation No: 11 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 10
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 86.1861%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 43077
+Avg Recharged Times for each node : 4307
+
+Slot Miss Rate = 17.706%
+
+
+~~~~~~~~~ Results for Simulation No: 12 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 20
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 77.9817%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 32682
+Avg Recharged Times for each node : 3268
+
+Slot Miss Rate = 14.6555%
+
+
+~~~~~~~~~ Results for Simulation No: 13 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 30
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 63.946%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 30417
+Avg Recharged Times for each node : 3041
+
+Slot Miss Rate = 8.67989%
+
+
+~~~~~~~~~ Results for Simulation No: 14 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 40
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 53.6501%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 30396
+Avg Recharged Times for each node : 3039
+
+Slot Miss Rate = 8.66485%
+
+
+~~~~~~~~~ Results for Simulation No: 15 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 50
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 45.4961%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 30077
+Avg Recharged Times for each node : 3007
+
+Slot Miss Rate = 10.2874%
+
+
+~~~~~~~~~ Results for Simulation No: 16 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 60
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 34.9398%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 30017
+Avg Recharged Times for each node : 3001
+
+Slot Miss Rate = 10.5629%
+
+
+~~~~~~~~~ Results for Simulation No: 17 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 70
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 32.8621%
+
+Successful TX Simulation ran for: 199970 time units 
+
+Total number of Recharge Times : 29547
+Avg Recharged Times for each node : 2954
+
+Slot Miss Rate = 13.1322%
+
+
+~~~~~~~~~ Results for Simulation No: 18 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 25.7257%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 29135
+Avg Recharged Times for each node : 2913
+
+Slot Miss Rate = 15.2558%
+
+
+~~~~~~~~~ Results for Simulation No: 19 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 17.8356%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 29007
+Avg Recharged Times for each node : 2900
+
+Slot Miss Rate = 16.1081%
+
+
+~~~~~~~~~ Results for Simulation No: 20 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 13.5238%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 28707
+Avg Recharged Times for each node : 2870
+
+Slot Miss Rate = 17.8385%
+
+
+~~~~~~~~~ Results for Simulation No: 21 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 8.52373%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 23210
+Avg Recharged Times for each node : 4642
+
+Slot Miss Rate = 38.799%
+
+
+~~~~~~~~~ Results for Simulation No: 22 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 20
+
+Risky Data Miss Rate = 2.85171%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 22952
+Avg Recharged Times for each node : 4590
+
+Slot Miss Rate = 40.5076%
+
+
+~~~~~~~~~ Results for Simulation No: 23 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 30
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 22409
+Avg Recharged Times for each node : 4481
+
+Slot Miss Rate = 46.8305%
+
+
+~~~~~~~~~ Results for Simulation No: 24 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 21491
+Avg Recharged Times for each node : 4298
+
+Slot Miss Rate = 55.4074%
+
+
+~~~~~~~~~ Results for Simulation No: 25 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 18542
+Avg Recharged Times for each node : 3708
+
+Slot Miss Rate = 77.5676%
+
+
+~~~~~~~~~ Results for Simulation No: 26 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 60
+
+Risky Data Miss Rate = 100%
+
+Successful TX Simulation ran for: -25 time units 
+
+Total number of Recharge Times : 16665
+Avg Recharged Times for each node : 3333
+
+Slot Miss Rate = 100%
+
+
+~~~~~~~~~ Results for Simulation No: 27 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 70
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 530 time units 
+
+Total number of Recharge Times : 14206
+Avg Recharged Times for each node : 2841
+
+Slot Miss Rate = 99.922%
+
+
+~~~~~~~~~ Results for Simulation No: 28 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 80
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 230 time units 
+
+Total number of Recharge Times : 12500
+Avg Recharged Times for each node : 2500
+
+Slot Miss Rate = 99.976%
+
+
+~~~~~~~~~ Results for Simulation No: 29 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 110 time units 
+
+Total number of Recharge Times : 11110
+Avg Recharged Times for each node : 2222
+
+Slot Miss Rate = 99.976%
+
+
+~~~~~~~~~ Results for Simulation No: 30 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 100
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 290 time units 
+
+Total number of Recharge Times : 9999
+Avg Recharged Times for each node : 1999
+
+Slot Miss Rate = 99.976%
+
+
+~~~~~~~~~ Results for Simulation No: 31 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 10
+
+Risky Data Miss Rate = 13.5238%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 28707
+Avg Recharged Times for each node : 2870
+
+Slot Miss Rate = 17.8385%
+
+
+~~~~~~~~~ Results for Simulation No: 32 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 20
+
+Risky Data Miss Rate = 20.4032%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 28266
+Avg Recharged Times for each node : 2826
+
+Slot Miss Rate = 20.3509%
+
+
+~~~~~~~~~ Results for Simulation No: 33 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 30
+
+Risky Data Miss Rate = 25.2071%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 27803
+Avg Recharged Times for each node : 2780
+
+Slot Miss Rate = 22.9293%
+
+
+~~~~~~~~~ Results for Simulation No: 34 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 17.6655%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 27641
+Avg Recharged Times for each node : 2764
+
+Slot Miss Rate = 23.8294%
+
+
+~~~~~~~~~ Results for Simulation No: 35 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 11.1025%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 27597
+Avg Recharged Times for each node : 2759
+
+Slot Miss Rate = 24.5078%
+
+
+~~~~~~~~~ Results for Simulation No: 36 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 60
+
+Risky Data Miss Rate = 29.2788%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 25450
+Avg Recharged Times for each node : 2545
+
+Slot Miss Rate = 39.6453%
+
+
+~~~~~~~~~ Results for Simulation No: 37 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 70
+
+Risky Data Miss Rate = 27.5067%
+
+Successful TX Simulation ran for: 199920 time units 
+
+Total number of Recharge Times : 23564
+Avg Recharged Times for each node : 2356
+
+Slot Miss Rate = 53.718%
+
+
+~~~~~~~~~ Results for Simulation No: 38 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 80
+
+Risky Data Miss Rate = 15.8423%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 22684
+Avg Recharged Times for each node : 2268
+
+Slot Miss Rate = 62.0469%
+
+
+~~~~~~~~~ Results for Simulation No: 39 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 2.61097%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 21235
+Avg Recharged Times for each node : 2123
+
+Slot Miss Rate = 74.7858%
+
+
+~~~~~~~~~ Results for Simulation No: 40 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 10
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 100
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 19519
+Avg Recharged Times for each node : 1951
+
+Slot Miss Rate = 86.4913%
+
+
+~~~~~~~~~ Results for Simulation No: 41 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 1000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 100%
+
+Successful TX Simulation ran for: -25 time units 
+
+Total number of Recharge Times : 20002
+Avg Recharged Times for each node : 4000
+
+Slot Miss Rate = 100%
+
+
+~~~~~~~~~ Results for Simulation No: 42 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 21491
+Avg Recharged Times for each node : 4298
+
+Slot Miss Rate = 55.4074%
+
+
+~~~~~~~~~ Results for Simulation No: 43 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 3000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 7.98266%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 12274
+Avg Recharged Times for each node : 2454
+
+Slot Miss Rate = 31.3534%
+
+
+~~~~~~~~~ Results for Simulation No: 44 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 4000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 5.73459%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 8258
+Avg Recharged Times for each node : 1651
+
+Slot Miss Rate = 31.0861%
+
+
+~~~~~~~~~ Results for Simulation No: 45 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 5000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 6.34804%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 6305
+Avg Recharged Times for each node : 1261
+
+Slot Miss Rate = 28.6479%
+
+
+~~~~~~~~~ Results for Simulation No: 46 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 6000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 6.07202%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 6194
+Avg Recharged Times for each node : 1238
+
+Slot Miss Rate = 26.5323%
+
+
+~~~~~~~~~ Results for Simulation No: 47 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 7000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 5.42885%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 5039
+Avg Recharged Times for each node : 1007
+
+Slot Miss Rate = 29.4051%
+
+
+~~~~~~~~~ Results for Simulation No: 48 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 8000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 4.94545%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 4237
+Avg Recharged Times for each node : 847
+
+Slot Miss Rate = 27.5967%
+
+
+~~~~~~~~~ Results for Simulation No: 49 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 9000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 5.63277%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 3621
+Avg Recharged Times for each node : 724
+
+Slot Miss Rate = 28.5209%
+
+
+~~~~~~~~~ Results for Simulation No: 50 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 10000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 80
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 5.49188%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 3196
+Avg Recharged Times for each node : 639
+
+Slot Miss Rate = 26.5976%
+
+
+~~~~~~~~~ Results for Simulation No: 51 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 1000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 100%
+
+Successful TX Simulation ran for: -25 time units 
+
+Total number of Recharge Times : 20002
+Avg Recharged Times for each node : 4000
+
+Slot Miss Rate = 100%
+
+
+~~~~~~~~~ Results for Simulation No: 52 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 21491
+Avg Recharged Times for each node : 4298
+
+Slot Miss Rate = 55.4074%
+
+
+~~~~~~~~~ Results for Simulation No: 53 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 3000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 3.42742%
+
+Successful TX Simulation ran for: 199970 time units 
+
+Total number of Recharge Times : 11880
+Avg Recharged Times for each node : 2376
+
+Slot Miss Rate = 37.2174%
+
+
+~~~~~~~~~ Results for Simulation No: 54 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 4000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 2.6981%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 7976
+Avg Recharged Times for each node : 1595
+
+Slot Miss Rate = 36.4298%
+
+
+~~~~~~~~~ Results for Simulation No: 55 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 5000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 3.3067%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 6076
+Avg Recharged Times for each node : 1215
+
+Slot Miss Rate = 34.6411%
+
+
+~~~~~~~~~ Results for Simulation No: 56 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 6000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 3.393%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 5762
+Avg Recharged Times for each node : 1152
+
+Slot Miss Rate = 32.8807%
+
+
+~~~~~~~~~ Results for Simulation No: 57 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 7000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 2.94618%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 4820
+Avg Recharged Times for each node : 964
+
+Slot Miss Rate = 36.9778%
+
+
+~~~~~~~~~ Results for Simulation No: 58 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 8000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 3.01562%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 4079
+Avg Recharged Times for each node : 815
+
+Slot Miss Rate = 33.4829%
+
+
+~~~~~~~~~ Results for Simulation No: 59 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 9000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 2.59566%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 3514
+Avg Recharged Times for each node : 702
+
+Slot Miss Rate = 32.7507%
+
+
+~~~~~~~~~ Results for Simulation No: 60 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 10000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 2.90084%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 3084
+Avg Recharged Times for each node : 616
+
+Slot Miss Rate = 32.2564%
+
+
+~~~~~~~~~ Results for Simulation No: 61 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 1000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 100%
+
+Successful TX Simulation ran for: -25 time units 
+
+Total number of Recharge Times : 20002
+Avg Recharged Times for each node : 4000
+
+Slot Miss Rate = 100%
+
+
+~~~~~~~~~ Results for Simulation No: 62 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 21491
+Avg Recharged Times for each node : 4298
+
+Slot Miss Rate = 55.4074%
+
+
+~~~~~~~~~ Results for Simulation No: 63 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 3000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 1.35008%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 11597
+Avg Recharged Times for each node : 2319
+
+Slot Miss Rate = 41.5668%
+
+
+~~~~~~~~~ Results for Simulation No: 64 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 4000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0.484027%
+
+Successful TX Simulation ran for: 199920 time units 
+
+Total number of Recharge Times : 7698
+Avg Recharged Times for each node : 1539
+
+Slot Miss Rate = 42.9818%
+
+
+~~~~~~~~~ Results for Simulation No: 65 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 5000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 1.32013%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 5893
+Avg Recharged Times for each node : 1178
+
+Slot Miss Rate = 39.0858%
+
+
+~~~~~~~~~ Results for Simulation No: 66 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 6000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0.909358%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 5483
+Avg Recharged Times for each node : 1096
+
+Slot Miss Rate = 37.7733%
+
+
+~~~~~~~~~ Results for Simulation No: 67 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 7000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0.864897%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 4750
+Avg Recharged Times for each node : 950
+
+Slot Miss Rate = 38.6516%
+
+
+~~~~~~~~~ Results for Simulation No: 68 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 8000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0.878992%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 3973
+Avg Recharged Times for each node : 794
+
+Slot Miss Rate = 37.7468%
+
+
+~~~~~~~~~ Results for Simulation No: 69 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 9000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0.818474%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 3413
+Avg Recharged Times for each node : 682
+
+Slot Miss Rate = 37.4548%
+
+
+~~~~~~~~~ Results for Simulation No: 70 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 10000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 40
+
+Risky Data Miss Rate = 0.499119%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 2981
+Avg Recharged Times for each node : 596
+
+Slot Miss Rate = 37.584%
+
+
+~~~~~~~~~ Results for Simulation No: 71 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 1000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 100%
+
+Successful TX Simulation ran for: -25 time units 
+
+Total number of Recharge Times : 16670
+Avg Recharged Times for each node : 3334
+
+Slot Miss Rate = 100%
+
+
+~~~~~~~~~ Results for Simulation No: 72 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 18542
+Avg Recharged Times for each node : 3708
+
+Slot Miss Rate = 77.5676%
+
+
+~~~~~~~~~ Results for Simulation No: 73 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 3000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 1.37399%
+
+Successful TX Simulation ran for: 199940 time units 
+
+Total number of Recharge Times : 11412
+Avg Recharged Times for each node : 2282
+
+Slot Miss Rate = 44.7741%
+
+
+~~~~~~~~~ Results for Simulation No: 74 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 4000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0.0370096%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 7432
+Avg Recharged Times for each node : 1486
+
+Slot Miss Rate = 50.0227%
+
+
+~~~~~~~~~ Results for Simulation No: 75 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 5000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0.87995%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 5818
+Avg Recharged Times for each node : 1163
+
+Slot Miss Rate = 42.0421%
+
+
+~~~~~~~~~ Results for Simulation No: 76 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 6000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 1.4055%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 5423
+Avg Recharged Times for each node : 1084
+
+Slot Miss Rate = 39.282%
+
+
+~~~~~~~~~ Results for Simulation No: 77 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 7000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0.300571%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 4740
+Avg Recharged Times for each node : 948
+
+Slot Miss Rate = 38.8415%
+
+
+~~~~~~~~~ Results for Simulation No: 78 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 8000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0.536513%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 3953
+Avg Recharged Times for each node : 790
+
+Slot Miss Rate = 38.8423%
+
+
+~~~~~~~~~ Results for Simulation No: 79 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 9000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0.797872%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 3401
+Avg Recharged Times for each node : 680
+
+Slot Miss Rate = 38.1564%
+
+
+~~~~~~~~~ Results for Simulation No: 80 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 10000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 100
+Harvesting/Sleep Time Duration = 50
+
+Risky Data Miss Rate = 0.603865%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 2958
+Avg Recharged Times for each node : 591
+
+Slot Miss Rate = 39.4369%
+
+
+~~~~~~~~~ Results for Simulation No: 81 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 1000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 100%
+
+Successful TX Simulation ran for: -25 time units 
+
+Total number of Recharge Times : 11110
+Avg Recharged Times for each node : 2222
+
+Slot Miss Rate = 100%
+
+
+~~~~~~~~~ Results for Simulation No: 82 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 110 time units 
+
+Total number of Recharge Times : 11110
+Avg Recharged Times for each node : 2222
+
+Slot Miss Rate = 99.976%
+
+
+~~~~~~~~~ Results for Simulation No: 83 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 3000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 0.0586166%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 10074
+Avg Recharged Times for each node : 2014
+
+Slot Miss Rate = 68.3185%
+
+
+~~~~~~~~~ Results for Simulation No: 84 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 4000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 7305
+Avg Recharged Times for each node : 1461
+
+Slot Miss Rate = 51.5838%
+
+
+~~~~~~~~~ Results for Simulation No: 85 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 5000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 0.245528%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 5619
+Avg Recharged Times for each node : 1123
+
+Slot Miss Rate = 47.3023%
+
+
+~~~~~~~~~ Results for Simulation No: 86 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 6000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 1.5758%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 5291
+Avg Recharged Times for each node : 1058
+
+Slot Miss Rate = 41.3963%
+
+
+~~~~~~~~~ Results for Simulation No: 87 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 7000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 0.42618%
+
+Successful TX Simulation ran for: 200000 time units 
+
+Total number of Recharge Times : 4702
+Avg Recharged Times for each node : 940
+
+Slot Miss Rate = 38.5876%
+
+
+~~~~~~~~~ Results for Simulation No: 88 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 8000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 1.07878%
+
+Successful TX Simulation ran for: 199960 time units 
+
+Total number of Recharge Times : 3853
+Avg Recharged Times for each node : 770
+
+Slot Miss Rate = 43.9191%
+
+
+~~~~~~~~~ Results for Simulation No: 89 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 9000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 0.810811%
+
+Successful TX Simulation ran for: 199990 time units 
+
+Total number of Recharge Times : 3386
+Avg Recharged Times for each node : 677
+
+Slot Miss Rate = 38.8842%
+
+
+~~~~~~~~~ Results for Simulation No: 90 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 10000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 90
+
+Risky Data Miss Rate = 2.90221%
+
+Successful TX Simulation ran for: 199980 time units 
+
+Total number of Recharge Times : 2917
+Avg Recharged Times for each node : 583
+
+Slot Miss Rate = 43.1773%
+
+
+~~~~~~~~~ Results for Simulation No: 91 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 1000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 100
+
+Risky Data Miss Rate = 100%
+
+Successful TX Simulation ran for: -25 time units 
+
+Total number of Recharge Times : 10000
+Avg Recharged Times for each node : 2000
+
+Slot Miss Rate = 100%
+
+
+~~~~~~~~~ Results for Simulation No: 92 ~~~~~~~~~~~~~
+
+Size of Data = 1000000
+Channel Error Rate = 0%
+Maximum Harvested Energy of Each Node = 2000
+
+Number of Nodes = 5
+Length of Slots = 10
+Data Read Interval Length = 90
+Harvesting/Sleep Time Duration = 100
+
+Risky Data Miss Rate = 0%
+
+Successful TX Simulation ran for: 290 time units 
+
+Total number of Recharge Times : 9999
+Avg Recharged Times for each node : 1999
+
+Slot Miss Rate = 99.976%

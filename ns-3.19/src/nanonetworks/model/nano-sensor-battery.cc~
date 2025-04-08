@@ -1,0 +1,594 @@
+/*Author: Tanzila Choudhury
+ Added for nano sensor node  with battery activities (without harvesting) - sensing, reading, making packet to transmit */
+
+
+#include "nano-sensor-battery.h"
+#include <fstream>
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <ns3/log.h>
+#include "ns3/random-variable-stream.h"
+#include "ns3/core-module.h"
+#include "ns3/object.h"
+#include "ns3/uinteger.h"
+#include <ns3/traced-callback.h>
+#include <ns3/traced-value.h>
+#include <ns3/trace-source-accessor.h>
+#include <ns3/trace-helper.h>
+#include "ns3/nstime.h"
+#include "ns3/simulator.h"
+#include "ns3/packet.h"
+#include <ns3/ptr.h>
+
+NS_LOG_COMPONENT_DEFINE("NanoSensorBattery");
+
+namespace ns3{
+
+NanoSensorBattery::NanoSensorBattery(void)
+{
+	//std::cout<<"constructor\n";
+	id=0;
+	energy_life_limit=2000;
+	tx_energy=2;
+	rx_energy=2;
+	sense_energy=1;
+	current_energy_unit=energy_life_limit;
+	is_Dynamic=false;
+	slot_num=0;
+	emergency_slot=-1;
+	data_memsize=0;
+	data_memory=NULL;
+	sensing_index=0;
+	sleep_time=Time(0);
+	dataread_time=Time(0);
+	tx_time=Time(0);
+	rx_time=Time(0);
+	lastDataSent=false;
+	dataReady=false;
+	data_interval=30;
+	last_read_time=Time(0);
+	last_sleep_time=Time(0);
+	num_em_slots=0;	
+	myslotmissed=0;
+	emslotmissedflag=false;
+	mytotalslots=0;
+	max_em_nodes = 0;
+	last_heard_time = 0;
+
+	gamma=0;
+	gamma_max=0;
+	cur_gamma=0;
+	em_bit =0;
+	next_tx_time=0;
+}
+
+
+
+
+NanoSensorBattery::NanoSensorBattery(int slotno, int maxEnergy, bool isDynamic, int memsize, int stime, int readtime, int txtime) // stime kept for AIMD scheduling otherwise 0 
+{
+
+	//std::cout<<"constructor 9\n";
+	energy_life_limit=maxEnergy;
+	tx_energy=1140;
+	rx_energy=1140;
+	sense_energy=190;
+	current_energy_unit=maxEnergy;
+	is_Dynamic=isDynamic;
+	slot_num=slotno;
+	id = slotno;
+	emergency_slot=-1; // indicates which emergency slot position it is assigned 
+	data_memsize=memsize;
+	sensing_index = 0;
+	sleep_time=Time(stime); //should be 0 for Simple and  Dynamic TDMA , otherwise it will have values for AIMD
+	data_memory= new int[memsize];
+	dataread_time=Time(readtime);
+	tx_time=Time(txtime);
+	rx_time=Time(txtime);
+	lastDataSent=false;
+	dataReady=false;
+	data_interval=readtime;
+	last_read_time=Time(0);
+	last_sleep_time=Time(0);
+	num_em_slots=0;	
+	myslotmissed=0;
+	emslotmissedflag=false;
+	mytotalslots=0;
+	max_em_nodes = 0;
+	last_heard_time = 0;
+
+	gamma=0;
+	gamma_max=0;
+	cur_gamma=0;
+	em_bit =0;
+	next_tx_time=0;
+
+}
+
+
+NanoSensorBattery::~NanoSensorBattery(void)
+{
+	//std::cout<<"destructor\n";
+}
+
+void NanoSensorBattery::ResetSensor(void)
+{	
+	//std::cout<<"Reset calling\n";
+	current_energy_unit=energy_life_limit;
+	emergency_slot=-1;
+	for(int i=0; i<data_memsize; i++)
+	{
+		data_memory[i]=-1;
+	}
+	lastDataSent=false;
+	dataReady=false;	
+} 
+
+
+int NanoSensorBattery::GetCurrentEnergy(void)
+{
+	return 	current_energy_unit;
+} 
+
+int NanoSensorBattery::GetId(void)
+{
+	return 	id;
+}
+
+void NanoSensorBattery::SetDataInterval(int interval)
+{
+	data_interval = interval;
+}
+
+void NanoSensorBattery::SetSensingStartTime(int sstime)
+{
+	sensing_start_time=Time(sstime);
+}
+
+int NanoSensorBattery::GetSensingIndex(int currenttime)  //returns the index of the currently holding data in memory 
+{
+	//sensing_index=(currenttime-sensing_start_time.GetMicroSeconds())/ data_interval;
+	return sensing_index;
+}
+
+void NanoSensorBattery::SetConsumeEnergy(int tx, int rx, int sense)
+{
+	tx_energy=tx;
+	rx_energy=rx;
+	sense_energy=sense;
+}
+
+void NanoSensorBattery::SetMaxEmNodes(int num)
+{
+	max_em_nodes = num;
+}
+
+
+void NanoSensorBattery::SetGammaValues(int g, int gmax)
+{
+	gamma = g;
+	gamma_max = gmax;	
+}
+
+int NanoSensorBattery::GetGammaVal(void)
+{
+	return gamma;
+}
+
+int NanoSensorBattery::GetGammaMax(void)
+{
+	return gamma_max;
+}
+
+int NanoSensorBattery::GetCurGammaVal(void)
+{
+	return cur_gamma;
+}
+
+int NanoSensorBattery::GetEmBitVal(void)
+{
+	return em_bit;
+}
+
+void NanoSensorBattery::UpdateCurGamma(bool emval)
+{
+	if(emval==true)
+		cur_gamma = 0; 
+	else
+	{
+		if(cur_gamma<gamma_max)
+			cur_gamma = cur_gamma+gamma;
+	}
+}
+
+int NanoSensorBattery::GetNextTxTime(void)
+{
+	return next_tx_time;
+}
+
+bool NanoSensorBattery::IsBatteryDead(void)
+{
+	if(current_energy_unit<2)
+		return true;
+	else 
+		return false;
+}
+
+void NanoSensorBattery::UpdateNextTxTime(int curtime, int slotlen, int NUM_NODE)
+{
+	next_tx_time = curtime + (cur_gamma+1)*(slotlen*NUM_NODE);
+}
+
+void NanoSensorBattery::ReadData(int data, int currenttime)
+{
+	std::cout<<"at time "<<currenttime<<": sensor "<<id<<" is sensing/reading data " << data << "\n";	
+	if(lastDataSent==false && dataReady==true)
+	{
+		std::cout<<"dropping previous unsent data becoz of memory shortage\n";
+	}
+	data_memory[0]=data;
+	lastDataSent=false;
+	dataReady=true;
+	sensing_index++;
+	current_energy_unit= current_energy_unit - sense_energy;
+	last_read_time= Time(currenttime);
+	std::cout<<"will finish reading at : "<<last_read_time+dataread_time<<std::endl;
+}
+
+
+bool NanoSensorBattery::ReadyToRead(int currenttime)
+{
+	
+	Time sensetime = Time(currenttime) - last_read_time;
+	std::cout<<"inside ReadytoRead for node: "<<id<<" , sensetime is : "<<sensetime<<std::endl;
+
+	if(current_energy_unit>sense_energy && sensetime>= Time(data_interval))
+	{	
+		return true;
+	}
+	else if(current_energy_unit<sense_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is out of energy. Battery life ends.\n";
+		return false;	
+	}
+	else 
+		return false;	
+}
+
+
+Ptr<Packet> NanoSensorBattery::TxDataSimpleTDMA(void)
+{
+	//std::cout<<"sensor "<<id<<" is packing data\n";	
+	uint8_t  buffer[10];  
+        int tempvalue = data_memory[0];
+	memcpy(buffer, &tempvalue, sizeof(int));
+              
+	Ptr<Packet> p = Create<Packet> (buffer,sizeof(int));
+	current_energy_unit= current_energy_unit - tx_energy;
+	lastDataSent=true;
+	dataReady=false;
+	return p;	
+}
+
+Ptr<Packet> NanoSensorBattery::TxDynamicData(bool risky) //used for Dynamic TDMA with risky bit indicator in packet data
+{
+	
+	//std::cout<<"sensor "<<id<<" is packing data\n";	
+	uint8_t  buffer[11];  
+        uint16_t tempvalue = data_memory[0];
+	uint8_t emergency_bit = 0; 
+
+	if(risky==true)
+		emergency_bit=1;
+
+	uint32_t packetval = emergency_bit;
+	packetval = (((uint32_t)(tempvalue<<4)) | packetval);
+	memcpy(buffer, &packetval, sizeof(int));
+	
+	Ptr<Packet> p = Create<Packet> (buffer,sizeof(uint32_t));
+
+	current_energy_unit= current_energy_unit - tx_energy;
+	lastDataSent=true;
+	dataReady=false;
+	
+	return p;	
+}
+
+
+
+Ptr<Packet> NanoSensorBattery::TxAdaptiveData(bool risky)
+{
+	//std::cout<<"sensor "<<id<<" is packing data\n";
+	
+	this->UpdateCurGamma(risky);
+	if(risky == true)
+		em_bit=1;
+	else 
+		em_bit=0;
+
+	uint8_t  buffer[10];  
+        int tempvalue = data_memory[0];
+	memcpy(buffer, &tempvalue, sizeof(int));
+              
+	Ptr<Packet> p = Create<Packet> (buffer,sizeof(int));
+	current_energy_unit= current_energy_unit - tx_energy;
+	lastDataSent=true;
+	dataReady=false;
+	return p;
+}
+
+
+bool NanoSensorBattery::ReadyToTxSimpleTDMA(int starttime, int currenttime, int slotlen, int NUM_NODE)
+{
+	int tdmatime = currenttime-starttime;
+	int onecycle = slotlen*NUM_NODE;
+	int myslottime = slotlen*slot_num;
+	bool ready = false;
+	
+
+	if((tdmatime%onecycle==myslottime) && (current_energy_unit>tx_energy) && (dataReady==true))
+	{	
+		ready=true;
+	}
+	else if(currenttime<last_read_time.GetMicroSeconds()+dataread_time.GetMicroSeconds())
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still reading\n";
+		ready=false;
+	}
+
+	else if(current_energy_unit<tx_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is out of energy. Battery life ends!\n";
+		ready=false;	
+	}
+	else if(dataReady==false)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " has no data ready\n";
+		ready=false;
+	}
+	else 
+	{
+		ready=false;
+	}
+
+	if((tdmatime%onecycle)==myslottime)
+	{	
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< "'s slot time to tx\n";
+		mytotalslots++;
+		
+		if(ready==false)
+		{
+			myslotmissed++;
+				
+		}			
+	}
+
+
+	return ready;
+}
+
+
+
+bool NanoSensorBattery::ReadyToTxAdaptiveTDMA(int starttime, int currenttime, int slotlen, int NUM_NODE)
+{
+	int tdmatime = currenttime-starttime;
+	int onecycle = slotlen*NUM_NODE;
+	int myslottime = slotlen*slot_num;
+	bool ready = false;
+	
+
+	if((tdmatime%onecycle==myslottime) && (current_energy_unit>tx_energy) && (dataReady==true))
+	{	
+		if(next_tx_time==0) //first cycle
+			ready=true;
+		else if(next_tx_time==currenttime)
+			ready=true;
+		else
+			ready=false;
+	}
+	else if(currenttime<last_read_time.GetMicroSeconds()+dataread_time.GetMicroSeconds())
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still reading\n";
+		ready=false;
+	}
+
+	else if(current_energy_unit<tx_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is out of energy. Battery life ends!\n";
+		ready=false;	
+	}
+	else if(dataReady==false)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " has no data ready\n";
+		ready=false;
+	}
+	else 
+	{
+		ready=false;
+	}
+
+	if((tdmatime%onecycle)==myslottime)
+	{	
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< "'s slot time to tx\n";
+		mytotalslots++;
+		
+		if(ready==false)
+		{
+			myslotmissed++;
+				
+		}			
+	}
+	
+
+	return ready;
+}
+
+
+
+
+bool NanoSensorBattery::ReadyToTxDynamicTDMA(int bstarttime, int currenttime, int slotlen, int NUM_NODE) //this bstarttime should be the Broadcast start time of that particular cycle
+{
+	int tdmatime = currenttime-bstarttime;
+	int onecycle = slotlen*(NUM_NODE+num_em_slots+1); //broadcastslot+emergencyslot+sensorslot
+	int myslottime;
+	bool ready=false;
+
+	int time_gap = currenttime - last_heard_time;
+
+	if(time_gap>(slotlen*(slot_num+1+max_em_nodes)))
+	{
+		return false;
+	}
+
+	if(emergency_slot==-1) //normal push slots 
+	{	
+			myslottime = slotlen*(num_em_slots + slot_num+1);
+	}	
+	else //emergency slots
+	{
+		if(emslotmissedflag==false)
+		{	
+			myslottime = slotlen*(emergency_slot+1);
+		}
+		else
+		{
+			myslottime = slotlen*(num_em_slots + slot_num+1);
+			emslotmissedflag=false; //reset flag
+			//emergency_slot=-1;
+			
+		}	
+ 
+	}
+
+	if((tdmatime%onecycle==myslottime) && (current_energy_unit>tx_energy) && (dataReady==true))
+	{	
+		ready=true;
+	}
+	else if(currenttime<last_read_time.GetMicroSeconds()+dataread_time.GetMicroSeconds())
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is still reading\n";
+		ready=false;
+	}
+
+	else if(current_energy_unit<tx_energy)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " is out of energy. Battery life ends!\n";
+		ready=false;	
+	}
+	else if(dataReady==false)
+	{
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< " has no data ready\n";
+		ready=false;
+	}
+	else 
+	{
+		ready=false;
+	}
+	
+	if((tdmatime%onecycle)==myslottime)
+	{	
+		std::cout<<"at time "<<currenttime<<" :node  "<<id<< "'s slot time to tx\n";
+		mytotalslots++;
+		
+		if(ready==false)
+		{
+			myslotmissed++;
+			
+			if(emergency_slot!=-1) // a slot missed in pull slots flag
+			{
+				emslotmissedflag=true;
+				
+			}	
+		}
+		emergency_slot=-1; //whether it is a pull slot or push slot, if it's slot time is passed, then for next cycle it should be reset again to -1
+			
+	}
+
+	return ready;
+}
+
+bool NanoSensorBattery::NewSensorDataReady(int currenttime)
+{
+	
+	return false;
+}
+
+
+void NanoSensorBattery::ConsumeEnergy(int eunits)
+{
+	current_energy_unit=current_energy_unit-eunits;
+	
+}
+
+int NanoSensorBattery::GetEmergencyNodeNum(void)
+{
+	return num_em_slots;
+}
+
+int NanoSensorBattery::GetEmergencySlotInfo(void)
+{
+	return emergency_slot;
+}
+
+int NanoSensorBattery::GetDataToBeSent(void)
+{
+	return data_memory[0];
+}
+
+int NanoSensorBattery::GetSlotMissedCount(void)
+{
+	return myslotmissed;
+}
+
+
+int NanoSensorBattery::GetTotalSlotCount(void)
+{
+	return mytotalslots;
+}
+
+
+int NanoSensorBattery::GetLastHeardTime(void)
+{
+	return last_heard_time;
+}
+
+void NanoSensorBattery::ExtractPullData(Ptr<Packet> p, int curtime) //extracts the packet info sent by interface during broadcase from the packet (after removing mac header)
+{
+	current_energy_unit = current_energy_unit-rx_energy;
+
+	last_heard_time = curtime;
+
+	uint8_t buffer[11];
+	p->CopyData(buffer, sizeof(buffer));
+	uint32_t packetdata;
+	memcpy(&packetdata, buffer, sizeof(uint32_t));	
+
+	int emergency = packetdata & 0x0000000F;
+	std::cout << "Emergency bit value " << emergency <<std::endl;
+	num_em_slots = (packetdata>>4) & 0x0000000F;
+	std::cout << "Number of emergency slots: " << num_em_slots <<std::endl;
+	if(num_em_slots>0)
+	{	
+		int value ;
+		for(int i=0; i<num_em_slots; i++)
+		{
+			value = (packetdata>>4*(i+2)) & 0x0000000F;
+			if(value==id)
+			{
+				emergency_slot=i;
+				std::cout << "emergency slots matched for: " << value<< ", given emergency slot:  "<< i<<std::endl;
+				return;
+			}
+		}
+	}
+	else
+	{
+		emergency_slot=-1;
+	}
+}
+
+
+
+
+} //namepace ns3

@@ -1,0 +1,180 @@
+/* -
+
+ * Added by: Tanzila Choudhury (December, 2017)
+ */
+
+
+/* added code for broadcast. while broadcasting, if the dst in mac header is 9999, then the device knows it is a broadcast msg*/
+
+#include "dynamic-nano-mac-entity.h"
+#include <ns3/log.h>
+#include <ns3/pointer.h>
+#include <ns3/packet.h>
+#include "simple-nano-device.h"
+#include "nano-mac-queue.h"
+#include "nano-spectrum-phy.h"
+#include "nano-mac-header.h"
+#include "ns3/seq-ts-header.h"
+#include "ns3/simulator.h"
+
+#include "ns3/object.h"
+#include "ns3/uinteger.h"
+#include "ns3/traced-value.h"
+#include "ns3/trace-source-accessor.h"
+ #include "ns3/packet.h"
+#include "ns3/config.h"
+#include <fstream>
+#include <iostream>
+#include <stdio.h>
+#include <list>
+#include <string.h>
+
+
+
+NS_LOG_COMPONENT_DEFINE ("DynamicNanoMacEntity");
+
+namespace ns3 {
+
+
+NS_OBJECT_ENSURE_REGISTERED (DynamicNanoMacEntity);
+
+TypeId DynamicNanoMacEntity::GetTypeId (void)
+{
+  static TypeId tid = TypeId ("ns3::DynamicNanoMacEntity")
+    .SetParent<NanoMacEntity> ()
+     .AddTraceSource ("PhyRxInfo",
+                       "Trace source indicating a packet has been received successfully and its info retreiving ",
+                        MakeTraceSourceAccessor (&DynamicNanoMacEntity::m_phyRxInfoTrace))
+     .AddTraceSource ("PhyTxInfo",
+                       "Trace source indicating a packet has been Transmitted successfully and its info retreiving ",
+                        MakeTraceSourceAccessor (&DynamicNanoMacEntity::m_phyTxInfoTrace))
+        ;
+  return tid;
+}
+
+
+DynamicNanoMacEntity::DynamicNanoMacEntity ()
+{
+  SetMacQueue (CreateObject <NanoMacQueue> ());
+  SetDevice (0);
+  Simulator::Schedule (Seconds(0.001), &NanoMacEntity::CheckForNeighbors, this);
+}
+
+
+DynamicNanoMacEntity::~DynamicNanoMacEntity ()
+{
+}
+
+void 
+DynamicNanoMacEntity::DoDispose (void)
+{
+  NanoMacEntity::DoDispose ();
+}
+
+void
+DynamicNanoMacEntity::DoSendPacket ()
+{
+  if (m_queue.size () > 0)
+    {
+	  NS_LOG_FUNCTION (this);
+	  Ptr<NanoSpectrumPhy> phy = GetDevice ()->GetPhy ();
+
+	  Ptr<Packet> p = (m_queue.front ())->Copy ();
+	  m_queue.pop_front ();
+	  phy->StartTx (p);
+
+	  if (m_queue.size () > 0)
+		{
+		  double txtime = phy->GetTxDuration (p);
+		  Simulator::Schedule (FemtoSeconds (txtime), &DynamicNanoMacEntity::DoSendPacket, this);
+		}
+    }
+}
+
+
+void
+DynamicNanoMacEntity::Send (Ptr<Packet> p)
+{
+  NS_LOG_FUNCTION (this << p);
+
+  NanoMacHeader header;
+  uint32_t src = GetDevice ()->GetNode ()->GetId ();
+  uint32_t dst = 0;
+  header.SetSource (src);
+  header.SetDestination (dst);
+
+  NS_LOG_FUNCTION (this << "mac header" << header);
+  p->AddHeader (header);
+
+  m_queue.push_back (p);
+
+  if (m_queue.size () == 1)
+	  DoSendPacket ();
+}
+
+void
+DynamicNanoMacEntity::Send (Ptr<Packet> p, uint32_t dst)
+{
+  NS_LOG_FUNCTION (this << p);
+
+  
+
+  NanoMacHeader header;
+  uint32_t src = GetDevice ()->GetNode ()->GetId ();
+  header.SetSource (src);
+  header.SetDestination (dst);
+
+  NS_LOG_FUNCTION (this << "mac header" << header);
+  p->AddHeader (header);
+
+  m_queue.push_back (p);
+        this->m_phyTxInfoTrace(p);
+       // NS_LOG_UNCOND ("\n Sending packet in mac layer from node "<< src <<" to "<< dst << "\n");
+  DoSendPacket ();
+}
+
+void 
+DynamicNanoMacEntity::BroadcastPacket(Ptr<Packet> p)
+{
+  NS_LOG_FUNCTION (this << p);  
+
+  NanoMacHeader header;
+  uint32_t src = GetDevice ()->GetNode ()->GetId ();
+  uint32_t dst = 9999;
+  header.SetSource (src);
+  header.SetDestination (dst);
+
+  NS_LOG_FUNCTION (this << "mac header" << header);
+  p->AddHeader (header);
+
+  m_queue.push_back (p);
+        this->m_phyTxInfoTrace(p);
+       // NS_LOG_UNCOND ("\n Sending packet in mac layer from node "<< src <<" to "<< dst << "\n");
+  DoSendPacket ();
+
+
+}
+
+
+void
+DynamicNanoMacEntity::Receive (Ptr<Packet> pkt)
+{
+  NS_LOG_FUNCTION (this);
+        
+        Ptr<Packet> p = pkt->Copy ();
+        
+        //NS_LOG_UNCOND ("\n packet received in mac layer by node "<< GetDevice ()->GetNode ()->GetId () << "\n");
+        NanoMacHeader macHeader;
+        p->RemoveHeader (macHeader);
+        uint32_t dst = macHeader.GetDestination ();
+        uint32_t src = macHeader.GetSource ();
+        if(GetDevice ()->GetNode ()->GetId () == dst || dst == 9999) //if the device is is the destination device or it was a broadcast msg (for broadcast dst==9999)
+        {
+                //NS_LOG_UNCOND ("\n I am node: " << dst << " and I got the packet successfully from node: "<<src<<" \n");
+                //NS_LOG_UNCOND (" Received packet size (after removing header): " << p->GetSize () <<"\n");
+                this->m_phyRxInfoTrace(pkt);
+        }
+}
+
+
+} // namespace ns3

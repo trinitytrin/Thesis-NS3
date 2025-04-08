@@ -1,0 +1,1037 @@
+Script started on Thu 26 Dec 2019 19:07:02 GMT
+]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ ./waf --run scratch/NewSSimpleTDMABattery1Harvesting1[3PBattery1Harvesting1[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ CXXFLAGS="-Wall" ./waf c[12Ponfigure[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ ./waf --run scratch/NewSimpleTDMABattery1Harvesting1[3PBattery1DynamicTDMABattery6[1PSimpleTDMABattery1DynamicTDMABattery6[1PSimpleTDMABattery1[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ CXXFLAGS="-Wall" ./waf c[9Ponfigure[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ ./waf --run scratch/NewSimpleTDMABattery1Harvesting1[2PDynamicTDMABattery6SimpleTDMAHarvesting1[3PBattery1[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ CXXFLAGS="-Wall" ./waf c[9Ponfigure[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ ./waf --run scratch/NewSimpleTDMABattery1DynamicTDMABattery6[1PSimpleTDMABattery1Harvesting1[3PBattery1Harvesting1[3PBattery1[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ CXXFLAGS="-Wall" ./waf c[9Ponfigure[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ ./waf --run scratch/NewSimpleTDMAHarvesting1[3PBattery1Harvesting1[3PBattery1[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./waf --run scratch/NewSSimpleTDMABattery1Harvesting1[3PBattery1Harvesting1[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ CXXFLAGS="-Wall" ./waf c[12Ponfigure[A]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ ./waf --run scratch/NewSimpleTDMABattery1Harvesting1[3PBattery1Harvesting1[3PBattery1DynamicTDMABattery6[1PSimpleTDMABattery1DynamicTDMABattery6[K[K[K[K[K[K[K[KHarvesting1.cc[K[K[K
+[32mWaf: Entering directory `/home/osboxes/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19/build'[0m
+[32mWaf: Leaving directory `/home/osboxes/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19/build'[0m
+[32m'build' finished successfully (0.342s)[0m
+
+ Testing- Inside Main 
+ 
+
+0: Resetting 2D array
+
+0: Resetting 2D array
+
+0	 Inside create Scenario function 
+ 
+
+ Datasize is: 20
+
+0	 Inside DynamicTDMA with harvesting function 
+ 
+0
+at time 25: sensor 0 is sensing/reading data 118
+will finish reading at : +35.0fs
+0
+at time 35: sensor 1 is sensing/reading data 80
+will finish reading at : +45.0fs
+0
+at time 45: sensor 2 is sensing/reading data 105
+will finish reading at : +55.0fs
+0
+at time 55: sensor 3 is sensing/reading data 103
+will finish reading at : +65.0fs
+0
+at time 65: sensor 4 is sensing/reading data 143
+will finish reading at : +75.0fs
+
+ This interface is node number: 5
+ 
+
+ This node is node number: 0
+ 
+
+ This node is node number: 1
+ 
+
+ This node is node number: 2
+ 
+
+ This node is node number: 3
+ 
+
+ This node is node number: 4
+ 
+Number of devices in this channel : 6
+
+
+Total Simulation time: 1000 microseconds 
+
+
+25	 Inside scheduleBroadcast function
+
+ inside PullInfoPacket function. 
+
+ Before Packing, Final packet value: 2
+
+ After Packing, Final packet value: 2
+
+ next broadcast time is after: 60 microseconds 
+
+ total broadcast time: 85
+at time 25 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +0.0fs
+at time 25 :node  0 is still sleeping
+at time 25: node 0 doing nothing
+at time 25 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : -10.0fs
+at time 25 :node  1 is still sleeping
+at time 25: node 1 doing nothing
+at time 25 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : -20.0fs
+at time 25 :node  2 is still sleeping
+at time 25: node 2 doing nothing
+at time 25 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : -30.0fs
+at time 25 :node  3 is still sleeping
+at time 25: node 3 doing nothing
+at time 25 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : -40.0fs
+at time 25 :node  4 is still sleeping
+at time 25: node 4 doing nothing
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+at time 35 :node  0's slot time to tx
+at time 35: node 0 is ready to tx
+
+35	 Inside scheduleTx function with Node: 0 LastBroadcastTime: 25 NextBroadcastTime: 85
+at time 35 :node  1 is still reading
+inside ReadytoRead for node: 1 , sensetime is : +0.0fs
+at time 35: node 1 doing nothing
+at time 35 :node  2 is still reading
+inside ReadytoRead for node: 2 , sensetime is : -10.0fs
+at time 35: node 2 doing nothing
+at time 35 :node  3 is still reading
+inside ReadytoRead for node: 3 , sensetime is : -20.0fs
+at time 35: node 3 doing nothing
+at time 35 :node  4 is still reading
+inside ReadytoRead for node: 4 , sensetime is : -30.0fs
+at time 35: node 4 doing nothing
+at time 45 :node  0 is going to harvest for having less energy
+sensor 0 is harvesting/sleeping
+inside ReadytoRead for node: 0 , sensetime is : +20.0fs
+at time 45 :node  0 is still sleeping
+at time 45: node 0 doing nothing
+at time 45 :node  1's slot time to tx
+at time 45: node 1 is ready to tx
+
+45	 Inside scheduleTx function with Node: 1 LastBroadcastTime: 25 NextBroadcastTime: 85
+at time 45 :node  2 is still reading
+inside ReadytoRead for node: 2 , sensetime is : +0.0fs
+at time 45: node 2 doing nothing
+at time 45 :node  3 is still reading
+inside ReadytoRead for node: 3 , sensetime is : -10.0fs
+at time 45: node 3 doing nothing
+at time 45 :node  4 is still reading
+inside ReadytoRead for node: 4 , sensetime is : -20.0fs
+at time 45: node 4 doing nothing
+at time 55 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +30.0fs
+at time 55 :node  0 is still sleeping
+at time 55: node 0 doing nothing
+at time 55 :node  1 is going to harvest for having less energy
+sensor 1 is harvesting/sleeping
+inside ReadytoRead for node: 1 , sensetime is : +20.0fs
+at time 55 :node  1 is still sleeping
+at time 55: node 1 doing nothing
+at time 55 :node  2's slot time to tx
+at time 55: node 2 is ready to tx
+
+55	 Inside scheduleTx function with Node: 2 LastBroadcastTime: 25 NextBroadcastTime: 85
+at time 55 :node  3 is still reading
+inside ReadytoRead for node: 3 , sensetime is : +0.0fs
+at time 55: node 3 doing nothing
+at time 55 :node  4 is still reading
+inside ReadytoRead for node: 4 , sensetime is : -10.0fs
+at time 55: node 4 doing nothing
+at time 65 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +40.0fs
+at time 65 :node  0 is still sleeping
+at time 65: node 0 doing nothing
+at time 65 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +30.0fs
+at time 65 :node  1 is still sleeping
+at time 65: node 1 doing nothing
+at time 65 :node  2 is going to harvest for having less energy
+sensor 2 is harvesting/sleeping
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 65 :node  2 is still sleeping
+at time 65: node 2 doing nothing
+at time 65 :node  3's slot time to tx
+at time 65: node 3 is ready to tx
+
+65	 Inside scheduleTx function with Node: 3 LastBroadcastTime: 25 NextBroadcastTime: 85
+at time 65 :node  4 is still reading
+inside ReadytoRead for node: 4 , sensetime is : +0.0fs
+at time 65: node 4 doing nothing
+inside ReadytoRead for node: 0 , sensetime is : +50.0fs
+at time 75: node 0 is ready to read
+at time 75: sensor 0 is sensing/reading data 116
+will finish reading at : +85.0fs
+at time 75 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +40.0fs
+at time 75 :node  1 is still sleeping
+at time 75: node 1 doing nothing
+at time 75 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 75 :node  2 is still sleeping
+at time 75: node 2 doing nothing
+at time 75 :node  3 is going to harvest for having less energy
+sensor 3 is harvesting/sleeping
+inside ReadytoRead for node: 3 , sensetime is : +20.0fs
+at time 75 :node  3 is still sleeping
+at time 75: node 3 doing nothing
+at time 75 :node  4's slot time to tx
+at time 75: node 4 is ready to tx
+
+75	 Inside scheduleTx function with Node: 4 LastBroadcastTime: 25 NextBroadcastTime: 85
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +10.0fs
+at time 85: node 0 doing nothing
+inside ReadytoRead for node: 1 , sensetime is : +50.0fs
+at time 85: node 1 is ready to read
+at time 85: sensor 1 is sensing/reading data 78
+will finish reading at : +95.0fs
+at time 85 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : +40.0fs
+at time 85 :node  2 is still sleeping
+at time 85: node 2 doing nothing
+at time 85 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +30.0fs
+at time 85 :node  3 is still sleeping
+at time 85: node 3 doing nothing
+at time 85 :node  4 is going to harvest for having less energy
+sensor 4 is harvesting/sleeping
+inside ReadytoRead for node: 4 , sensetime is : +20.0fs
+at time 85 :node  4 is still sleeping
+at time 85: node 4 doing nothing
+
+85	 Inside scheduleBroadcast function
+
+ inside PullInfoPacket function. 
+
+ Before Packing, Final packet value: 2
+
+ debugging: j=2 em_node#=4 shifted:12 bits and packetvalue= 40000
+
+ debugging: j=1 em_node#=3 shifted:8 bits and packetvalue= 43000
+
+ debugging: j=0 em_node#=2 shifted:4 bits and packetvalue= 43200
+
+ After Packing, Final packet value: 43232
+
+ next broadcast time is after: 90 microseconds 
+
+ total broadcast time: 175
+Emergency bit value 2
+Number of emergency slots: 3
+Emergency bit value 2
+Number of emergency slots: 3
+Emergency bit value 2
+Number of emergency slots: 3
+emergency slots matched for: 2, given emergency slot:  0
+Emergency bit value 2
+Number of emergency slots: 3
+emergency slots matched for: 3, given emergency slot:  1
+Emergency bit value 2
+Number of emergency slots: 3
+emergency slots matched for: 4, given emergency slot:  2
+inside ReadytoRead for node: 0 , sensetime is : +20.0fs
+at time 95: node 0 doing nothing
+inside ReadytoRead for node: 1 , sensetime is : +10.0fs
+at time 95: node 1 doing nothing
+at time 95 :node  2's slot time to tx
+inside ReadytoRead for node: 2 , sensetime is : +50.0fs
+at time 95: node 2 is ready to read
+at time 95: sensor 2 is sensing/reading data 102
+will finish reading at : +105.0fs
+at time 95 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +40.0fs
+at time 95 :node  3 is still sleeping
+at time 95: node 3 doing nothing
+at time 95 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +30.0fs
+at time 95 :node  4 is still sleeping
+at time 95: node 4 doing nothing
+inside ReadytoRead for node: 0 , sensetime is : +30.0fs
+at time 105: node 0 is ready to read
+at time 105: sensor 0 is sensing/reading data 115
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +115.0fs
+inside ReadytoRead for node: 1 , sensetime is : +20.0fs
+at time 105: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +10.0fs
+at time 105: node 2 doing nothing
+at time 105 :node  3's slot time to tx
+inside ReadytoRead for node: 3 , sensetime is : +50.0fs
+at time 105: node 3 is ready to read
+at time 105: sensor 3 is sensing/reading data 100
+will finish reading at : +115.0fs
+at time 105 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +40.0fs
+at time 105 :node  4 is still sleeping
+at time 105: node 4 doing nothing
+inside ReadytoRead for node: 0 , sensetime is : +10.0fs
+at time 115: node 0 doing nothing
+inside ReadytoRead for node: 1 , sensetime is : +30.0fs
+at time 115: node 1 is ready to read
+at time 115: sensor 1 is sensing/reading data 77
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +125.0fs
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 115: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +10.0fs
+at time 115: node 3 doing nothing
+at time 115 :node  4's slot time to tx
+inside ReadytoRead for node: 4 , sensetime is : +50.0fs
+at time 115: node 4 is ready to read
+at time 115: sensor 4 is sensing/reading data 145
+will finish reading at : +125.0fs
+at time 125 :node  0's slot time to tx
+at time 125: node 0 is ready to tx
+
+125	 Inside scheduleTx function with Node: 0 LastBroadcastTime: 85 NextBroadcastTime: 175
+inside ReadytoRead for node: 1 , sensetime is : +10.0fs
+at time 125: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 125: node 2 is ready to read
+at time 125: sensor 2 is sensing/reading data 104
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +135.0fs
+inside ReadytoRead for node: 3 , sensetime is : +20.0fs
+at time 125: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +10.0fs
+at time 125: node 4 doing nothing
+at time 135 :node  0 is going to harvest for having less energy
+sensor 0 is harvesting/sleeping
+inside ReadytoRead for node: 0 , sensetime is : +30.0fs
+at time 135 :node  0 is still sleeping
+at time 135: node 0 doing nothing
+at time 135 :node  1's slot time to tx
+at time 135: node 1 is ready to tx
+
+135	 Inside scheduleTx function with Node: 1 LastBroadcastTime: 85 NextBroadcastTime: 175
+inside ReadytoRead for node: 2 , sensetime is : +10.0fs
+at time 135: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +30.0fs
+at time 135: node 3 is ready to read
+at time 135: sensor 3 is sensing/reading data 99
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +145.0fs
+inside ReadytoRead for node: 4 , sensetime is : +20.0fs
+at time 135: node 4 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +40.0fs
+at time 145 :node  0 is still sleeping
+at time 145: node 0 doing nothing
+at time 145 :node  1 is going to harvest for having less energy
+sensor 1 is harvesting/sleeping
+inside ReadytoRead for node: 1 , sensetime is : +30.0fs
+at time 145 :node  1 is still sleeping
+at time 145: node 1 doing nothing
+at time 145 :node  2's slot time to tx
+at time 145: node 2 is ready to tx
+
+145	 Inside scheduleTx function with Node: 2 LastBroadcastTime: 85 NextBroadcastTime: 175
+inside ReadytoRead for node: 3 , sensetime is : +10.0fs
+at time 145: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +30.0fs
+at time 145: node 4 is ready to read
+at time 145: sensor 4 is sensing/reading data 138
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +155.0fs
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +50.0fs
+at time 155 :node  0 is still sleeping
+at time 155: node 0 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 1 , sensetime is : +40.0fs
+at time 155 :node  1 is still sleeping
+at time 155: node 1 doing nothing
+at time 155 :node  2 is going to harvest for having less energy
+sensor 2 is harvesting/sleeping
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 155 :node  2 is still sleeping
+at time 155: node 2 doing nothing
+at time 155 :node  3's slot time to tx
+at time 155: node 3 is ready to tx
+
+155	 Inside scheduleTx function with Node: 3 LastBroadcastTime: 85 NextBroadcastTime: 175
+inside ReadytoRead for node: 4 , sensetime is : +10.0fs
+at time 155: node 4 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +60.0fs
+at time 165: node 0 is ready to read
+at time 165: sensor 0 is sensing/reading data 114
+will finish reading at : +175.0fs
+return false due to time gap check
+inside ReadytoRead for node: 1 , sensetime is : +50.0fs
+at time 165 :node  1 is still sleeping
+at time 165: node 1 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 2 , sensetime is : +40.0fs
+at time 165 :node  2 is still sleeping
+at time 165: node 2 doing nothing
+at time 165 :node  3 is going to harvest for having less energy
+sensor 3 is harvesting/sleeping
+inside ReadytoRead for node: 3 , sensetime is : +30.0fs
+at time 165 :node  3 is still sleeping
+at time 165: node 3 doing nothing
+at time 165 :node  4's slot time to tx
+at time 165: node 4 is ready to tx
+
+165	 Inside scheduleTx function with Node: 4 LastBroadcastTime: 85 NextBroadcastTime: 175
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +10.0fs
+at time 175: node 0 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 1 , sensetime is : +60.0fs
+at time 175: node 1 is ready to read
+at time 175: sensor 1 is sensing/reading data 75
+will finish reading at : +185.0fs
+return false due to time gap check
+inside ReadytoRead for node: 2 , sensetime is : +50.0fs
+at time 175 :node  2 is still sleeping
+at time 175: node 2 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 3 , sensetime is : +40.0fs
+at time 175 :node  3 is still sleeping
+at time 175: node 3 doing nothing
+at time 175 :node  4 is going to harvest for having less energy
+sensor 4 is harvesting/sleeping
+inside ReadytoRead for node: 4 , sensetime is : +30.0fs
+at time 175 :node  4 is still sleeping
+at time 175: node 4 doing nothing
+
+175	 Inside scheduleBroadcast function
+
+ inside PullInfoPacket function. 
+
+ Before Packing, Final packet value: 2
+
+ debugging: j=0 em_node#=2 shifted:4 bits and packetvalue= 200
+
+ After Packing, Final packet value: 212
+
+ next broadcast time is after: 70 microseconds 
+
+ total broadcast time: 245
+Emergency bit value 2
+Number of emergency slots: 1
+Emergency bit value 2
+Number of emergency slots: 1
+Emergency bit value 2
+Number of emergency slots: 1
+emergency slots matched for: 2, given emergency slot:  0
+Emergency bit value 2
+Number of emergency slots: 1
+Emergency bit value 2
+Number of emergency slots: 1
+inside ReadytoRead for node: 0 , sensetime is : +20.0fs
+at time 185: node 0 doing nothing
+inside ReadytoRead for node: 1 , sensetime is : +10.0fs
+at time 185: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +60.0fs
+at time 185: node 2 is ready to read
+at time 185: sensor 2 is sensing/reading data 96
+will finish reading at : +195.0fs
+at time 185 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +50.0fs
+at time 185 :node  3 is still sleeping
+at time 185: node 3 doing nothing
+at time 185 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +40.0fs
+at time 185 :node  4 is still sleeping
+at time 185: node 4 doing nothing
+at time 195 :node  0's slot time to tx
+at time 195: node 0 is ready to tx
+
+195	 Inside scheduleTx function with Node: 0 LastBroadcastTime: 175 NextBroadcastTime: 245
+inside ReadytoRead for node: 1 , sensetime is : +20.0fs
+at time 195: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +10.0fs
+at time 195: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +60.0fs
+at time 195: node 3 is ready to read
+at time 195: sensor 3 is sensing/reading data 99
+will finish reading at : +205.0fs
+at time 195 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +50.0fs
+at time 195 :node  4 is still sleeping
+at time 195: node 4 doing nothing
+at time 205 :node  0 is going to harvest for having less energy
+sensor 0 is harvesting/sleeping
+inside ReadytoRead for node: 0 , sensetime is : +40.0fs
+at time 205 :node  0 is still sleeping
+at time 205: node 0 doing nothing
+at time 205 :node  1's slot time to tx
+at time 205: node 1 is ready to tx
+
+205	 Inside scheduleTx function with Node: 1 LastBroadcastTime: 175 NextBroadcastTime: 245
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 205: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +10.0fs
+at time 205: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +60.0fs
+at time 205: node 4 is ready to read
+at time 205: sensor 4 is sensing/reading data 136
+will finish reading at : +215.0fs
+at time 215 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +50.0fs
+at time 215 :node  0 is still sleeping
+at time 215: node 0 doing nothing
+at time 215 :node  1 is going to harvest for having less energy
+sensor 1 is harvesting/sleeping
+inside ReadytoRead for node: 1 , sensetime is : +40.0fs
+at time 215 :node  1 is still sleeping
+at time 215: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 215: node 2 is ready to read
+at time 215: sensor 2 is sensing/reading data 95
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +225.0fs
+inside ReadytoRead for node: 3 , sensetime is : +20.0fs
+at time 215: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +10.0fs
+at time 215: node 4 doing nothing
+at time 225 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +60.0fs
+at time 225 :node  0 is still sleeping
+at time 225: node 0 doing nothing
+at time 225 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +50.0fs
+at time 225 :node  1 is still sleeping
+at time 225: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +10.0fs
+at time 225: node 2 doing nothing
+at time 225 :node  3's slot time to tx
+at time 225: node 3 is ready to tx
+
+225	 Inside scheduleTx function with Node: 3 LastBroadcastTime: 175 NextBroadcastTime: 245
+inside ReadytoRead for node: 4 , sensetime is : +20.0fs
+at time 225: node 4 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +70.0fs
+at time 235: node 0 is ready to read
+at time 235: sensor 0 is sensing/reading data 114
+will finish reading at : +245.0fs
+at time 235 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +60.0fs
+at time 235 :node  1 is still sleeping
+at time 235: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 235: node 2 doing nothing
+at time 235 :node  3 is going to harvest for having less energy
+sensor 3 is harvesting/sleeping
+inside ReadytoRead for node: 3 , sensetime is : +40.0fs
+at time 235 :node  3 is still sleeping
+at time 235: node 3 doing nothing
+at time 235 :node  4's slot time to tx
+at time 235: node 4 is ready to tx
+
+235	 Inside scheduleTx function with Node: 4 LastBroadcastTime: 175 NextBroadcastTime: 245
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +10.0fs
+at time 245: node 0 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 1 , sensetime is : +70.0fs
+at time 245: node 1 is ready to read
+at time 245: sensor 1 is sensing/reading data 77
+will finish reading at : +255.0fs
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 245: node 2 is ready to read
+at time 245: sensor 2 is sensing/reading data 99
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +255.0fs
+at time 245 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +50.0fs
+at time 245 :node  3 is still sleeping
+at time 245: node 3 doing nothing
+at time 245 :node  4 is going to harvest for having less energy
+sensor 4 is harvesting/sleeping
+inside ReadytoRead for node: 4 , sensetime is : +40.0fs
+at time 245 :node  4 is still sleeping
+at time 245: node 4 doing nothing
+
+245	 Inside scheduleBroadcast function
+
+ inside PullInfoPacket function. 
+
+ Before Packing, Final packet value: 2
+
+ After Packing, Final packet value: 2
+
+ next broadcast time is after: 60 microseconds 
+
+ total broadcast time: 305
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+Emergency bit value 2
+Number of emergency slots: 0
+at time 255 :node  0's slot time to tx
+at time 255: node 0 is ready to tx
+
+255	 Inside scheduleTx function with Node: 0 LastBroadcastTime: 245 NextBroadcastTime: 305
+inside ReadytoRead for node: 1 , sensetime is : +10.0fs
+at time 255: node 1 doing nothing
+at time 255 :node  2 is going to harvest for having less energy
+sensor 2 is harvesting/sleeping
+inside ReadytoRead for node: 2 , sensetime is : +10.0fs
+at time 255 :node  2 is still sleeping
+at time 255: node 2 doing nothing
+at time 255 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +60.0fs
+at time 255 :node  3 is still sleeping
+at time 255: node 3 doing nothing
+at time 255 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +50.0fs
+at time 255 :node  4 is still sleeping
+at time 255: node 4 doing nothing
+at time 265 :node  0 is going to harvest for having less energy
+sensor 0 is harvesting/sleeping
+inside ReadytoRead for node: 0 , sensetime is : +30.0fs
+at time 265 :node  0 is still sleeping
+at time 265: node 0 doing nothing
+at time 265 :node  1's slot time to tx
+at time 265: node 1 is ready to tx
+
+265	 Inside scheduleTx function with Node: 1 LastBroadcastTime: 245 NextBroadcastTime: 305
+at time 265 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 265 :node  2 is still sleeping
+at time 265: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +70.0fs
+at time 265: node 3 is ready to read
+at time 265: sensor 3 is sensing/reading data 103
+will finish reading at : +275.0fs
+at time 265 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +60.0fs
+at time 265 :node  4 is still sleeping
+at time 265: node 4 doing nothing
+at time 275 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +40.0fs
+at time 275 :node  0 is still sleeping
+at time 275: node 0 doing nothing
+at time 275 :node  1 is going to harvest for having less energy
+sensor 1 is harvesting/sleeping
+inside ReadytoRead for node: 1 , sensetime is : +30.0fs
+at time 275 :node  1 is still sleeping
+at time 275: node 1 doing nothing
+at time 275 :node  2's slot time to tx
+at time 275: node 2 is ready to tx
+
+275	 Inside scheduleTx function with Node: 2 LastBroadcastTime: 245 NextBroadcastTime: 305
+inside ReadytoRead for node: 3 , sensetime is : +10.0fs
+at time 275: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +70.0fs
+at time 275: node 4 is ready to read
+at time 275: sensor 4 is sensing/reading data 140
+will finish reading at : +285.0fs
+at time 285 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +50.0fs
+at time 285 :node  0 is still sleeping
+at time 285: node 0 doing nothing
+at time 285 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +40.0fs
+at time 285 :node  1 is still sleeping
+at time 285: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +40.0fs
+at time 285: node 2 is ready to read
+at time 285: sensor 2 is sensing/reading data 104
+will finish reading at : +295.0fs
+at time 285 :node  3's slot time to tx
+at time 285: node 3 is ready to tx
+
+285	 Inside scheduleTx function with Node: 3 LastBroadcastTime: 245 NextBroadcastTime: 305
+inside ReadytoRead for node: 4 , sensetime is : +10.0fs
+at time 285: node 4 doing nothing
+inside ReadytoRead for node: 0 , sensetime is : +60.0fs
+at time 295: node 0 is ready to read
+at time 295: sensor 0 is sensing/reading data 118
+will finish reading at : +305.0fs
+at time 295 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +50.0fs
+at time 295 :node  1 is still sleeping
+at time 295: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +10.0fs
+at time 295: node 2 doing nothing
+at time 295 :node  3 is going to harvest for having less energy
+sensor 3 is harvesting/sleeping
+inside ReadytoRead for node: 3 , sensetime is : +30.0fs
+at time 295 :node  3 is still sleeping
+at time 295: node 3 doing nothing
+at time 295 :node  4's slot time to tx
+at time 295: node 4 is ready to tx
+
+295	 Inside scheduleTx function with Node: 4 LastBroadcastTime: 245 NextBroadcastTime: 305
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +10.0fs
+at time 305: node 0 doing nothing
+inside ReadytoRead for node: 1 , sensetime is : +60.0fs
+at time 305: node 1 is ready to read
+at time 305: sensor 1 is sensing/reading data 80
+will finish reading at : +315.0fs
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 305: node 2 doing nothing
+at time 305 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +40.0fs
+at time 305 :node  3 is still sleeping
+at time 305: node 3 doing nothing
+at time 305 :node  4 is going to harvest for having less energy
+sensor 4 is harvesting/sleeping
+inside ReadytoRead for node: 4 , sensetime is : +30.0fs
+at time 305 :node  4 is still sleeping
+at time 305: node 4 doing nothing
+
+305	 Inside scheduleBroadcast function
+
+ inside PullInfoPacket function. 
+
+ Before Packing, Final packet value: 2
+
+ debugging: j=0 em_node#=3 shifted:4 bits and packetvalue= 300
+
+ After Packing, Final packet value: 312
+
+ next broadcast time is after: 70 microseconds 
+
+ total broadcast time: 375
+Emergency bit value 2
+Number of emergency slots: 1
+Emergency bit value 2
+Number of emergency slots: 1
+Emergency bit value 2
+Number of emergency slots: 1
+Emergency bit value 2
+Number of emergency slots: 1
+emergency slots matched for: 3, given emergency slot:  0
+Emergency bit value 2
+Number of emergency slots: 1
+inside ReadytoRead for node: 0 , sensetime is : +20.0fs
+at time 315: node 0 doing nothing
+inside ReadytoRead for node: 1 , sensetime is : +10.0fs
+at time 315: node 1 doing nothing
+at time 315 :node  2 is going to harvest for having less energy
+sensor 2 is harvesting/sleeping
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 315 :node  2 is still sleeping
+at time 315: node 2 doing nothing
+at time 315 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +50.0fs
+at time 315 :node  3 is still sleeping
+at time 315: node 3 doing nothing
+at time 315 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +40.0fs
+at time 315 :node  4 is still sleeping
+at time 315: node 4 doing nothing
+at time 325 :node  0's slot time to tx
+at time 325: node 0 is ready to tx
+
+325	 Inside scheduleTx function with Node: 0 LastBroadcastTime: 305 NextBroadcastTime: 375
+inside ReadytoRead for node: 1 , sensetime is : +20.0fs
+at time 325: node 1 doing nothing
+at time 325 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : +40.0fs
+at time 325 :node  2 is still sleeping
+at time 325: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +60.0fs
+at time 325: node 3 is ready to read
+at time 325: sensor 3 is sensing/reading data 99
+will finish reading at : +335.0fs
+at time 325 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +50.0fs
+at time 325 :node  4 is still sleeping
+at time 325: node 4 doing nothing
+at time 335 :node  0 is going to harvest for having less energy
+sensor 0 is harvesting/sleeping
+inside ReadytoRead for node: 0 , sensetime is : +40.0fs
+at time 335 :node  0 is still sleeping
+at time 335: node 0 doing nothing
+at time 335 :node  1's slot time to tx
+at time 335: node 1 is ready to tx
+
+335	 Inside scheduleTx function with Node: 1 LastBroadcastTime: 305 NextBroadcastTime: 375
+at time 335 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : +50.0fs
+at time 335 :node  2 is still sleeping
+at time 335: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +10.0fs
+at time 335: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +60.0fs
+at time 335: node 4 is ready to read
+at time 335: sensor 4 is sensing/reading data 148
+will finish reading at : +345.0fs
+at time 345 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +50.0fs
+at time 345 :node  0 is still sleeping
+at time 345: node 0 doing nothing
+at time 345 :node  1 is going to harvest for having less energy
+sensor 1 is harvesting/sleeping
+inside ReadytoRead for node: 1 , sensetime is : +40.0fs
+at time 345 :node  1 is still sleeping
+at time 345: node 1 doing nothing
+at time 345 :node  2's slot time to tx
+at time 345: node 2 is ready to tx
+
+345	 Inside scheduleTx function with Node: 2 LastBroadcastTime: 305 NextBroadcastTime: 375
+inside ReadytoRead for node: 3 , sensetime is : +20.0fs
+at time 345: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +10.0fs
+at time 345: node 4 doing nothing
+at time 355 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +60.0fs
+at time 355 :node  0 is still sleeping
+at time 355: node 0 doing nothing
+at time 355 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +50.0fs
+at time 355 :node  1 is still sleeping
+at time 355: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +70.0fs
+at time 355: node 2 is ready to read
+at time 355: sensor 2 is sensing/reading data 105
+will finish reading at : +365.0fs
+inside ReadytoRead for node: 3 , sensetime is : +30.0fs
+at time 355: node 3 is ready to read
+at time 355: sensor 3 is sensing/reading data 101
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +365.0fs
+inside ReadytoRead for node: 4 , sensetime is : +20.0fs
+at time 355: node 4 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +70.0fs
+at time 365: node 0 is ready to read
+at time 365: sensor 0 is sensing/reading data 111
+will finish reading at : +375.0fs
+at time 365 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +60.0fs
+at time 365 :node  1 is still sleeping
+at time 365: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +10.0fs
+at time 365: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +10.0fs
+at time 365: node 3 doing nothing
+at time 365 :node  4's slot time to tx
+at time 365: node 4 is ready to tx
+
+365	 Inside scheduleTx function with Node: 4 LastBroadcastTime: 305 NextBroadcastTime: 375
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +10.0fs
+at time 375: node 0 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 1 , sensetime is : +70.0fs
+at time 375: node 1 is ready to read
+at time 375: sensor 1 is sensing/reading data 78
+will finish reading at : +385.0fs
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 375: node 2 doing nothing
+inside ReadytoRead for node: 3 , sensetime is : +20.0fs
+at time 375: node 3 doing nothing
+at time 375 :node  4 is going to harvest for having less energy
+sensor 4 is harvesting/sleeping
+inside ReadytoRead for node: 4 , sensetime is : +40.0fs
+at time 375 :node  4 is still sleeping
+at time 375: node 4 doing nothing
+
+375	 Inside scheduleBroadcast function
+
+ inside PullInfoPacket function. 
+
+ Before Packing, Final packet value: 2
+
+ debugging: j=1 em_node#=4 shifted:8 bits and packetvalue= 4000
+
+ debugging: j=0 em_node#=2 shifted:4 bits and packetvalue= 4200
+
+ After Packing, Final packet value: 4222
+
+ next broadcast time is after: 80 microseconds 
+
+ total broadcast time: 455
+Emergency bit value 2
+Number of emergency slots: 2
+Emergency bit value 2
+Number of emergency slots: 2
+Emergency bit value 2
+Number of emergency slots: 2
+emergency slots matched for: 2, given emergency slot:  0
+Emergency bit value 2
+Number of emergency slots: 2
+Emergency bit value 2
+Number of emergency slots: 2
+emergency slots matched for: 4, given emergency slot:  1
+inside ReadytoRead for node: 0 , sensetime is : +20.0fs
+at time 385: node 0 doing nothing
+inside ReadytoRead for node: 1 , sensetime is : +10.0fs
+at time 385: node 1 doing nothing
+at time 385 :node  2 is going to harvest for having less energy
+sensor 2 is harvesting/sleeping
+at time 385 :node  2's slot time to tx
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 385 :node  2 is still sleeping
+at time 385: node 2 doing nothing
+at time 385 :node  3 is going to harvest for having less energy
+sensor 3 is harvesting/sleeping
+at time 385 :node  3's slot time to tx
+inside ReadytoRead for node: 3 , sensetime is : +30.0fs
+at time 385 :node  3 is still sleeping
+at time 385: node 3 doing nothing
+at time 385 :node  4 is still sleeping
+inside ReadytoRead for node: 4 , sensetime is : +50.0fs
+at time 385 :node  4 is still sleeping
+at time 385: node 4 doing nothing
+inside ReadytoRead for node: 0 , sensetime is : +30.0fs
+at time 395: node 0 is ready to read
+at time 395: sensor 0 is sensing/reading data 116
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +405.0fs
+inside ReadytoRead for node: 1 , sensetime is : +20.0fs
+at time 395: node 1 doing nothing
+at time 395 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : +40.0fs
+at time 395 :node  2 is still sleeping
+at time 395: node 2 doing nothing
+at time 395 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +40.0fs
+at time 395 :node  3 is still sleeping
+at time 395: node 3 doing nothing
+at time 395 :node  4 is still sleeping
+at time 395 :node  4's slot time to tx
+inside ReadytoRead for node: 4 , sensetime is : +60.0fs
+at time 395 :node  4 is still sleeping
+at time 395: node 4 doing nothing
+at time 405 :node  0's slot time to tx
+at time 405: node 0 is ready to tx
+
+405	 Inside scheduleTx function with Node: 0 LastBroadcastTime: 375 NextBroadcastTime: 455
+inside ReadytoRead for node: 1 , sensetime is : +30.0fs
+at time 405: node 1 is ready to read
+at time 405: sensor 1 is sensing/reading data 78
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +415.0fs
+at time 405 :node  2 is still sleeping
+inside ReadytoRead for node: 2 , sensetime is : +50.0fs
+at time 405 :node  2 is still sleeping
+at time 405: node 2 doing nothing
+at time 405 :node  3 is still sleeping
+inside ReadytoRead for node: 3 , sensetime is : +50.0fs
+at time 405 :node  3 is still sleeping
+at time 405: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +70.0fs
+at time 405: node 4 is ready to read
+at time 405: sensor 4 is sensing/reading data 143
+will finish reading at : +415.0fs
+at time 415 :node  0 is going to harvest for having less energy
+sensor 0 is harvesting/sleeping
+inside ReadytoRead for node: 0 , sensetime is : +20.0fs
+at time 415 :node  0 is still sleeping
+at time 415: node 0 doing nothing
+at time 415 :node  1's slot time to tx
+at time 415: node 1 is ready to tx
+
+415	 Inside scheduleTx function with Node: 1 LastBroadcastTime: 375 NextBroadcastTime: 455
+inside ReadytoRead for node: 2 , sensetime is : +60.0fs
+at time 415: node 2 is ready to read
+at time 415: sensor 2 is sensing/reading data 95
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +425.0fs
+inside ReadytoRead for node: 3 , sensetime is : +60.0fs
+at time 415: node 3 is ready to read
+at time 415: sensor 3 is sensing/reading data 100
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +425.0fs
+inside ReadytoRead for node: 4 , sensetime is : +10.0fs
+at time 415: node 4 doing nothing
+at time 425 :node  0 is still sleeping
+inside ReadytoRead for node: 0 , sensetime is : +30.0fs
+at time 425 :node  0 is still sleeping
+at time 425: node 0 doing nothing
+at time 425 :node  1 is going to harvest for having less energy
+sensor 1 is harvesting/sleeping
+inside ReadytoRead for node: 1 , sensetime is : +20.0fs
+at time 425 :node  1 is still sleeping
+at time 425: node 1 doing nothing
+at time 425 :node  2's slot time to tx
+at time 425: node 2 is ready to tx
+
+425	 Inside scheduleTx function with Node: 2 LastBroadcastTime: 375 NextBroadcastTime: 455
+inside ReadytoRead for node: 3 , sensetime is : +10.0fs
+at time 425: node 3 doing nothing
+inside ReadytoRead for node: 4 , sensetime is : +20.0fs
+at time 425: node 4 doing nothing
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +40.0fs
+at time 435 :node  0 is still sleeping
+at time 435: node 0 doing nothing
+at time 435 :node  1 is still sleeping
+inside ReadytoRead for node: 1 , sensetime is : +30.0fs
+at time 435 :node  1 is still sleeping
+at time 435: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +20.0fs
+at time 435: node 2 doing nothing
+at time 435 :node  3's slot time to tx
+at time 435: node 3 is ready to tx
+
+435	 Inside scheduleTx function with Node: 3 LastBroadcastTime: 375 NextBroadcastTime: 455
+inside ReadytoRead for node: 4 , sensetime is : +30.0fs
+at time 435: node 4 is ready to read
+at time 435: sensor 4 is sensing/reading data 136
+dropping previous unsent data becoz of memory shortage
+will finish reading at : +445.0fs
+return false due to time gap check
+inside ReadytoRead for node: 0 , sensetime is : +50.0fs
+at time 445: node 0 is ready to read
+at time 445: sensor 0 is sensing/reading data 120
+will finish reading at : +455.0fs
+return false due to time gap check
+inside ReadytoRead for node: 1 , sensetime is : +40.0fs
+at time 445 :node  1 is still sleeping
+at time 445: node 1 doing nothing
+inside ReadytoRead for node: 2 , sensetime is : +30.0fs
+at time 445: node 2 is ready to read
+at time 445: sensor 2 is sensing/reading data 98
+will finish reading at : +455.0fs
+inside ReadytoRead for node: 3 , sensetime is : +30.0fs
+at time 445: node 3 is ready to read
+at time 445: sensor 3 is sensing/reading data 100
+will finish reading at : +455.0fs
+at time 445 :node  4's slot time to tx
+at time 445: node 4 is ready to tx
+
+445	 Inside scheduleTx function with Node: 4 LastBroadcastTime: 375 NextBroadcastTime: 455
+
+0.001304: Dumping 2D array
+118 116 115 114 114 118 111 116 120 116 119 116 112 119 110 119 120 119 110 115 
+ 80  78  77  75  77  80  78  78  76  75  79  78  80  77  79  78  78  80  79  78 
+105 102 104  96  95  99 104 105  95  98 100  99  96 102  97 102 105  97 105 101 
+103 100  99  99 103  99 101 100 100 101 100 100 103 100 103 102 102  99 102 103 
+143 145 138 136 140 148 143 136 142 139 143 136 143 136 136 133 143 146 150 147 
+
+Total number of TXedRisky data: 8
+Total number of Actually MIssed Risky data: 0
+Total number of Received Risky data: 8
+Total number of slots : 34
+Total number of slots missed : 6
+
+
+Total number of Dropped Packets: 0
+
+
+Total number of Dropped Risky Data Packets: 0
+]0;osboxes@osboxes: ~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19osboxes@osboxes:~/NEW-NS3-NANO/ns-allinone-3.19/ns-3.19$ exit
+exit
+
+Script done on Thu 26 Dec 2019 19:07:48 GMT
